@@ -1,0 +1,2 @@
+"use strict"
+module.exports={async up(q,S){await q.createTable("questions",{id:{type:S.INTEGER,autoIncrement:true,primaryKey:true},prompt:{type:S.STRING(280),allowNull:false,unique:true},region:{type:S.STRING(40),allowNull:false},answers_count:{type:S.INTEGER,allowNull:false},created_at:{type:S.DATE,allowNull:false,defaultValue:S.NOW},updated_at:{type:S.DATE,allowNull:false,defaultValue:S.NOW}})},async down(q){await q.dropTable("questions")}}
