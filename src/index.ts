@@ -15,7 +15,7 @@ type StoredState = GameState & { questionId:number; questionPrompt:string; answe
 const rooms=new Map<string,Room>(); const app=express(); const origin=process.env.APP_ORIGIN??'http://localhost:5173'
 app.use(helmet()); app.use(cors({origin})); app.use(express.json())
 const token=()=>randomBytes(24).toString('hex'); const makeCode=()=>randomBytes(4).toString('hex').toUpperCase()
-const publicState=(state:Record<string,unknown>)=>{const copy=structuredClone(state);delete copy.answerIds;delete copy.answers;return copy}
+const publicState=(state:Record<string,unknown>)=>{const copy=structuredClone(state);const answers=Array.isArray(copy.answers)?copy.answers:[];delete copy.answerIds;delete copy.answers;copy.answerCount=answers.length;return copy}
 const auth=(req:Request,game:Game)=>req.header('x-host-token')===game.hostToken||req.body?.hostToken===game.hostToken||req.query.hostToken===game.hostToken
 const snapshot=(room:Room,privateView=false)=>({code:room.game.code,mode:room.game.mode,state:privateView?room.game.state:publicState(room.game.state),devices:[...room.devices.values()]})
 async function loadRoom(code:string){const normalized=code.toUpperCase();const cached=rooms.get(normalized);if(cached)return cached;const game=await Game.findOne({where:{code:normalized}});if(!game)return null;const room={game,devices:new Map<string,Device>(),buzzerWinner:null};rooms.set(normalized,room);return room}
