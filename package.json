@@ -12,14 +12,13 @@
     "test": "tsx --test src/game/rules.test.ts",
     "db:status": "sequelize-cli db:migrate:status",
     "db:migrate": "sequelize-cli db:migrate",
-    "db:undo": "sequelize-cli db:migrate:undo",
-    "db:undo:all": "sequelize-cli db:migrate:undo:all",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo",
+    "db:migrate:undo:all": "sequelize-cli db:migrate:undo:all",
     "db:seed": "sequelize-cli db:seed:all",
-    "db:seed:questions": "sequelize-cli db:seed --seed 20261108000000-questions.js",
-    "db:seed:answers": "sequelize-cli db:seed --seed 20261108000001-answers.js",
-    "db:seed:undo": "sequelize-cli db:seed:undo:all",
+    "db:seed:undo": "sequelize-cli db:seed:undo",
+    "db:seed:undo:all": "sequelize-cli db:seed:undo:all",
     "db:init": "pnpm db:migrate && pnpm db:seed",
-    "db:revert": "pnpm db:seed:undo && pnpm db:undo:all"
+    "db:revert": "pnpm db:seed:undo:all && pnpm db:migrate:undo:all"
   },
   "dependencies": {
     "cors": "^2.8.5",
