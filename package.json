@@ -15,8 +15,8 @@
     "db:undo": "sequelize-cli db:migrate:undo",
     "db:undo:all": "sequelize-cli db:migrate:undo:all",
     "db:seed": "sequelize-cli db:seed:all",
-    "db:seed:questions": "sequelize-cli db:seed --seed questions.seeder.js",
-    "db:seed:answers": "sequelize-cli db:seed --seed answers.seeder.js",
+    "db:seed:questions": "sequelize-cli db:seed --seed 20261108000000-questions.js",
+    "db:seed:answers": "sequelize-cli db:seed --seed 20261108000001-answers.js",
     "db:seed:undo": "sequelize-cli db:seed:undo:all",
     "db:init": "pnpm db:migrate && pnpm db:seed",
     "db:revert": "pnpm db:seed:undo && pnpm db:undo:all"

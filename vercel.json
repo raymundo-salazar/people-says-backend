@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm db:migrate && pnpm build",
+  "buildCommand": "pnpm db:migrate && pnpm db:seed:all && pnpm build",
   "functions": {
     "api/index.ts": {
       "runtime": "nodejs24.x"
