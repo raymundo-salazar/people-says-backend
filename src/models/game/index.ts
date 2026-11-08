@@ -1,0 +1,4 @@
+import { DataTypes, Model, type Sequelize } from 'sequelize';
+import type { GameAttributes, GameCreationAttributes } from './types.js';
+export class Game extends Model<GameAttributes, GameCreationAttributes> implements GameAttributes { declare id:number; declare code:string; declare name:string|null; declare mode:GameAttributes['mode']; declare state:Record<string,unknown>; declare createdAt:Date; declare updatedAt:Date; public static associate():void {} }
+export function initializeGame(sequelize:Sequelize) { Game.init({ id:{type:DataTypes.INTEGER,autoIncrement:true,primaryKey:true}, code:{type:DataTypes.STRING(8),allowNull:false,unique:true}, name:{type:DataTypes.STRING(120)}, mode:{type:DataTypes.STRING(32),allowNull:false}, state:{type:DataTypes.JSON,allowNull:false,defaultValue:{}} }, { sequelize, tableName:'games', underscored:true }); }

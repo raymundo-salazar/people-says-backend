@@ -1,0 +1,4 @@
+import { DataTypes, Model, type Sequelize } from 'sequelize';
+import type { QuestionAttributes, QuestionCreationAttributes } from './types.js';
+export class Question extends Model<QuestionAttributes, QuestionCreationAttributes> implements QuestionAttributes { declare id:number; declare prompt:string; declare region:string; declare answersCount:number; declare createdAt:Date; declare updatedAt:Date; public static associate():void {} }
+export function initializeQuestion(sequelize:Sequelize) { Question.init({ id:{type:DataTypes.INTEGER,autoIncrement:true,primaryKey:true}, prompt:{type:DataTypes.STRING(280),allowNull:false}, region:{type:DataTypes.STRING(40),allowNull:false,defaultValue:'latam'}, answersCount:{type:DataTypes.INTEGER,allowNull:false} }, { sequelize, tableName:'questions', underscored:true }); }

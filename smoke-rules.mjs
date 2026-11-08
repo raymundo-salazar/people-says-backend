@@ -1,0 +1,12 @@
+import { createInitialState, finishRound, registerStrike, revealAnswer, startTiebreaker, validateAnswers } from './src/game/rules.ts';
+const answers = [{text:'Llaves',points:38,position:1},{text:'Celular',points:27,position:2},{text:'Cartera',points:18,position:3},{text:'Lentes',points:10,position:4},{text:'Audífonos',points:7,position:5}];
+if (validateAnswers(answers).length) throw new Error('La encuesta inicial no es válida');
+let state = createInitialState([{answerCount:10,multiplier:1},{answerCount:8,multiplier:2}], [{id:'blue',name:'Azul',players:['Ana']},{id:'red',name:'Rojo',players:['Luis']}]);
+state = revealAnswer(state, answers[0], 0);
+state = registerStrike(registerStrike(registerStrike(state, 'blue'), 'blue'), 'blue');
+if (state.pot !== 38 || state.phase !== 'steal') throw new Error('Reglas de robo inválidas');
+const tie = finishRound({ ...state, phase:'turn', roundIndex:1, pot:0 }, 'blue');
+if (tie.phase !== 'faceoff') throw new Error('El empate final debe iniciar desempate');
+const tiebreaker = startTiebreaker({ ...state, phase:'final', roundIndex:1, pot:0 }, 4);
+if (tiebreaker.roundConfigs.at(-1).answerCount !== 4 || tiebreaker.phase !== 'faceoff') throw new Error('Desempate extraordinario inválido');
+console.log('rules smoke test: ok');

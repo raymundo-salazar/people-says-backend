@@ -1,0 +1,4 @@
+import { DataTypes, Model, type Sequelize } from 'sequelize';
+import type { AnswerAttributes, AnswerCreationAttributes } from './types.js';
+export class Answer extends Model<AnswerAttributes, AnswerCreationAttributes> implements AnswerAttributes { declare id:number; declare questionId:number; declare text:string; declare points:number; declare position:number; declare createdAt:Date; declare updatedAt:Date; public static associate():void {} }
+export function initializeAnswer(sequelize:Sequelize) { Answer.init({ id:{type:DataTypes.INTEGER,autoIncrement:true,primaryKey:true}, questionId:{type:DataTypes.INTEGER,allowNull:false}, text:{type:DataTypes.STRING(160),allowNull:false}, points:{type:DataTypes.INTEGER,allowNull:false}, position:{type:DataTypes.INTEGER,allowNull:false} }, { sequelize, tableName:'answers', underscored:true }); }
