@@ -4,7 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { createServer } from 'node:http';
 import { Server } from 'socket.io';
-import { database } from './models/index.js';
+import { Answer, Question, database } from './models/index.js';
 
 const port = Number(process.env.PORT ?? 3010);
 type DeviceRole = 'host'|'display'|'buzzer'|'blue_button'|'red_button';
@@ -13,14 +13,19 @@ const rooms = new Map<string, Room>();
 const app = express();
 app.use(helmet()); app.use(cors({ origin: process.env.APP_ORIGIN ?? 'http://localhost:5174' })); app.use(express.json());
 app.get('/health', (_req,res)=>res.json({ ok:true, service:'people-says' }));
-app.post('/api/rooms', (req,res)=>{
+app.post('/api/rooms', async (req,res)=>{
   const modes = new Set(['classic','stage','buttons','auto']);
   const mode = typeof req.body?.mode === 'string' && modes.has(req.body.mode) ? req.body.mode : 'classic';
   let code = '';
   do { code = Math.random().toString(36).slice(2,7).toUpperCase(); } while (rooms.has(code));
-  rooms.set(code, { code, devices:new Map(), state:{ phase:'lobby', mode, round:0, revealed:[], strikes:{ blue:0, red:0 } } });
-  res.status(201).json({ code, mode, name:req.body?.name ?? null });
+  const answerCount = 10;
+  const question = await Question.findOne({ where:{ answersCount:answerCount }, order:[['id','ASC']] });
+  if (!question) return res.status(503).json({ error:'question_catalog_empty' });
+  const answers = await Answer.findAll({ where:{ questionId:question.id }, order:[['position','ASC']] });
+  rooms.set(code, { code, devices:new Map(), state:{ phase:'lobby', mode, round:0, questionId:question.id, questionPrompt:question.prompt, answerCount, revealed:[], strikes:{ blue:0, red:0 } } });
+  return res.status(201).json({ code, mode, name:req.body?.name ?? null, question:{ id:question.id, prompt:question.prompt, answers:answers.map(answer=>({ text:answer.text, points:answer.points })) } });
 });
+app.get('/api/questions/random', async (req,res)=>{ const answerCount=Math.min(10,Math.max(4,Number(req.query.answerCount ?? 10))); const question=await Question.findOne({where:{answersCount:answerCount},order:[['id','ASC']]}); if(!question) return res.status(404).json({error:'question_not_found'}); const answers=await Answer.findAll({where:{questionId:question.id},order:[['position','ASC']]}); return res.json({id:question.id,prompt:question.prompt,answers:answers.map(answer=>({text:answer.text,points:answer.points}))}); });
 app.get('/api/rooms/:code', (req,res)=>{ const room=rooms.get(req.params.code.toUpperCase()); if(!room) return res.status(404).json({ error:'room_not_found' }); return res.json({ code:room.code, state:room.state, devices:[...room.devices.values()] }); });
 const server = createServer(app);
 const io = new Server(server, { cors: { origin: process.env.APP_ORIGIN ?? 'http://localhost:5174' } });
@@ -31,7 +36,7 @@ io.on('connection', socket => {
     if(!['host','display','buzzer','blue_button','red_button'].includes(role)) return socket.emit('room:error',{ error:'invalid_role' });
     room.devices.set(socket.id,{ role, connectedAt:Date.now() }); socket.join(normalized); socket.data.room=normalized; socket.emit('room:state',{ code:normalized, state:room.state }); io.to(normalized).emit('room:presence',{ devices:[...room.devices.values()] });
   });
-  socket.on('room:event', ({ code, event }:{code:string;event:{type:string;[key:string]:unknown}})=>{
+  socket.on('room:event', async ({ code, event }:{code:string;event:{type:string;[key:string]:unknown}})=>{
     const normalized=code.toUpperCase(); const room=rooms.get(normalized); if(!room || !event || typeof event.type!=='string') return;
     if(event.type==='buzzer:press') {
       const team = event.team === 'blue' || event.team === 'red' ? event.team : null;
@@ -44,8 +49,11 @@ io.on('connection', socket => {
       return io.to(normalized).emit('room:presence',{ devices:[...room.devices.values()] });
     }
     if(event.type==='answer:reveal' && Number.isInteger(event.index)) {
+      const answer = await Answer.findOne({ where:{ questionId:Number(room.state.questionId), position:(event.index as number) + 1 } });
+      if (!answer) return;
       const revealed = Array.isArray(room.state.revealed) ? room.state.revealed as number[] : [];
       if(!revealed.includes(event.index as number)) room.state = { ...room.state, revealed:[...revealed,event.index] };
+      return io.to(normalized).emit('room:event', { type:'answer:reveal', index:event.index, text:answer.text, points:answer.points });
     }
     if(event.type==='strike' && (event.team === 'blue' || event.team === 'red')) {
       const strikes = { ...(room.state.strikes as Record<string, number> ?? {}), [event.team]:Number(event.count ?? 0) };
