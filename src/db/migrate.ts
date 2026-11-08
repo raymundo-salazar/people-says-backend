@@ -6,6 +6,7 @@ import { up as createAnswers } from './migrations/003-create-answers.js';
 import { up as createTeams } from './migrations/004-create-teams.js';
 import { up as createPlayers } from './migrations/005-create-players.js';
 import { up as createQuestionResponses } from './migrations/006-create-question-responses.js';
+import { up as addHostToken } from './migrations/007-add-host-token.js';
 const query = database.getQueryInterface();
-for (const migration of [createGames, createQuestions, createAnswers, createTeams, createPlayers, createQuestionResponses]) { try { await migration(query); } catch (error) { if (!String(error).includes('already exists')) throw error; } }
+for (const migration of [createGames, createQuestions, createAnswers, createTeams, createPlayers, createQuestionResponses, addHostToken]) { try { await migration(query); } catch (error) { if (!String(error).includes('already exists') && !String(error).includes('duplicate')) throw error; } }
 await database.close(); console.log('Migraciones aplicadas');
