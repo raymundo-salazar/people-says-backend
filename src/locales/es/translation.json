@@ -1,0 +1,7 @@
+{
+  "errors": {
+    "room_not_found": "No se encontró la sala",
+    "question_not_found": "No se encontró la pregunta",
+    "host_required": "Se requiere autorización del anfitrión"
+  }
+}

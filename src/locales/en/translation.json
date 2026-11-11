@@ -1,0 +1,7 @@
+{
+  "errors": {
+    "room_not_found": "Room not found",
+    "question_not_found": "Question not found",
+    "host_required": "Host authorization required"
+  }
+}
