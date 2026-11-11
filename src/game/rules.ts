@@ -15,6 +15,7 @@ export type GameState = {
   control: TeamId | null
   revealed: number[]
   strikes: Record<TeamId, number>
+  faceoffStrikeTeam?: TeamId
   pot: number
   faceoff?: {
     bluePlayer?: string
