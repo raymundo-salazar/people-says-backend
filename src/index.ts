@@ -444,14 +444,17 @@ async function applyAction(
     return persist(room, next)
   }
   if (input.type === "strike" && input.team) {
+    if (!["faceoff", "turn"].includes(state.phase)) throw new Error("strike_not_active")
     await GameStrike.create({
       gameId: room.game.id,
       questionId: state.questionId,
       teamId: state.teamIds?.[input.team] ?? null,
       playerId: state.playerIds?.[input.team]?.[state.turnIndex[input.team]] ?? null,
       roundIndex: state.roundIndex,
+      phase: state.phase === "faceoff" ? "faceoff" : "turn",
       source: input.source === "timer" ? "timer" : "manual",
     })
+    if (state.phase === "faceoff") return persist(room, state)
     const next = registerStrike(state, input.team)
     return persist(room, next)
   }

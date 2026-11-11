@@ -5,6 +5,7 @@ export interface GameStrikeAttributes {
   teamId: number | null
   playerId: number | null
   roundIndex: number
+  phase: "faceoff" | "turn"
   source: "manual" | "timer"
   createdAt: Date
   updatedAt: Date
