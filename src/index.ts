@@ -768,6 +768,8 @@ io.on("connection", (socket) => {
       try {
         await applyAction(room, payload.action)
         if (payload.action.type === "strike") io.to(room.game.code).emit("game:strike")
+        if (payload.action.type === "reveal_answer")
+          io.to(room.game.code).emit("game:answer-revealed", { index: payload.action.index })
         emitState(io, room)
         scheduleAuto(room)
       } catch (error) {
