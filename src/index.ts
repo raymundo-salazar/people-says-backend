@@ -547,6 +547,7 @@ async function applyAction(
       next.faceoff = undefined
       return persist(room, next)
     }
+    if (next.phase === "turn") next.turnIndex = advancePlayer(next, team).turnIndex
     return persist(room, next)
   }
   if (input.type === "strike" && input.team) {
@@ -583,6 +584,7 @@ async function applyAction(
       return persist(room, state)
     }
     const next = registerStrike(state, input.team)
+    if (next.phase !== "steal") next.turnIndex = advancePlayer(next, input.team).turnIndex
     return persist(room, next)
   }
   if (
