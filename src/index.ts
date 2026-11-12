@@ -186,7 +186,7 @@ async function questionFor(count: number, gameId?: number, categoryIds?: number[
   return { question, answers }
 }
 async function candidateQuestion(count: number, categoryIds: number[], excludedIds: number[] = []) {
-  const questions = await Question.findAll({ where: { answersCount: count, categoryId: categoryIds, id: excludedIds.length ? { [Op.notIn]: excludedIds } : undefined } })
+  const questions = await Question.findAll({ where: { answersCount: { [Op.gte]: count }, categoryId: categoryIds, id: excludedIds.length ? { [Op.notIn]: excludedIds } : undefined } })
   const shuffled = [...questions].sort(() => Math.random() - 0.5)
   const question = shuffled[0]
   if (!question) throw new Error("question_not_found")
