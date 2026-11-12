@@ -4,6 +4,7 @@ export interface GameAttributes {
   name: string | null
   mode: "classic" | "stage" | "buttons" | "auto"
   phase: string
+  activeTeam: "blue" | "red" | null
   hostToken: string
   state: Record<string, unknown>
   createdAt: Date
@@ -14,6 +15,7 @@ export interface GameCreationAttributes {
   name?: string | null
   mode: "classic" | "stage" | "buttons" | "auto"
   phase?: string
+  activeTeam?: "blue" | "red" | null
   hostToken: string
   state?: Record<string, unknown>
 }

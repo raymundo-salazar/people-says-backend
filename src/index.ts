@@ -120,6 +120,15 @@ async function loadRoom(code: string) {
   if (cached) return cached
   const game = await Game.findOne({ where: { code: normalized } })
   if (!game) return null
+  const storedState = game.state as StoredState
+  if (game.activeTeam) {
+    if (["faceoff", "decision", "tiebreaker"].includes(game.phase)) {
+      storedState.faceoff = { ...(storedState.faceoff ?? {}), activeTeam: game.activeTeam }
+    } else {
+      storedState.control = game.activeTeam
+    }
+    game.state = storedState
+  }
   const room = { game, devices: new Map<string, Device>(), buzzerWinner: null }
   rooms.set(normalized, room)
   return room
@@ -139,6 +148,11 @@ async function questionFor(count: number) {
 async function persist(room: Room, state: Record<string, unknown>) {
   room.game.state = state
   room.game.phase = typeof state.phase === "string" ? state.phase : "lobby"
+  const faceoff = state.faceoff as { activeTeam?: TeamId; firstTeam?: TeamId } | undefined
+  room.game.activeTeam =
+    (["faceoff", "decision", "tiebreaker"].includes(room.game.phase)
+      ? (faceoff?.activeTeam ?? faceoff?.firstTeam)
+      : (state.control as TeamId | null | undefined)) ?? null
   await room.game.save()
   return state
 }
