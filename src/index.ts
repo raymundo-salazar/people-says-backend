@@ -462,7 +462,7 @@ async function applyAction(
     if (state.phase !== "turn") {
       state.faceoffStrikes = {
         ...(state.faceoffStrikes ?? { blue: 0, red: 0 }),
-        [input.team]: Math.min(3, (state.faceoffStrikes?.[input.team] ?? 0) + 1),
+        [input.team]: Math.min(5, (state.faceoffStrikes?.[input.team] ?? 0) + 1),
       }
       state.faceoffStrikeTeam = input.team
       return persist(room, state)
