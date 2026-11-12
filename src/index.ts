@@ -305,6 +305,7 @@ app.post("/api/rooms", async (req, res) => {
       preparedQuestions.push(prepared)
     }
     const selected = preparedQuestions[0]
+    if (!selected?.answers?.length) throw new Error("questions_required")
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
     state.answerIds = selected.answers.map((a) => a.id)
