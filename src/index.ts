@@ -766,8 +766,16 @@ io.on("connection", (socket) => {
       if (!room || (payload.hostToken !== room.game.hostToken && socketRole !== "host"))
         return socket.emit("game:error", { error: "host_required" })
       try {
+        const actionPhase = (room.game.state as StoredState).phase
         await applyAction(room, payload.action)
-        if (payload.action.type === "strike") io.to(room.game.code).emit("game:strike")
+        if (payload.action.type === "strike" && payload.action.team) {
+          const updatedState = room.game.state as StoredState
+          const count =
+            actionPhase === "turn"
+              ? updatedState.strikes[payload.action.team]
+              : (updatedState.faceoffStrikes?.[payload.action.team] ?? 1)
+          io.to(room.game.code).emit("game:strike", { count, team: payload.action.team })
+        }
         if (payload.action.type === "reveal_answer")
           io.to(room.game.code).emit("game:answer-revealed", { index: payload.action.index })
         emitState(io, room)
