@@ -1,0 +1,2 @@
+"use strict"
+module.exports = { async up(q, S) { await q.createTable("categories", { id: { type: S.INTEGER, autoIncrement: true, primaryKey: true }, name: { type: S.STRING(100), allowNull: false, unique: true }, description: { type: S.STRING(280), allowNull: false }, created_at: { type: S.DATE, allowNull: false, defaultValue: S.NOW }, updated_at: { type: S.DATE, allowNull: false, defaultValue: S.NOW } }) }, async down(q) { await q.dropTable("categories") } }

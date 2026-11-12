@@ -2,6 +2,8 @@
 const { QueryTypes } = require("sequelize")
 module.exports = {
   async up(q) {
+    return
+    /*
     const columns = await q.sequelize.query(
       q.sequelize.getDialect() === "sqlite"
         ? "PRAGMA table_info(games)"
@@ -26,11 +28,7 @@ module.exports = {
         await q.bulkInsert("game_runtime_answers", [{ game_id: game.id, answer_index: i, answer_id: state.answerIds?.[i] ?? null, text: answer.text, points: answer.points, position: answer.position, revealed: (state.revealed || []).includes(i), created_at: new Date(), updated_at: new Date() }])
       }
     }
+    */
   },
-  async down(q) {
-    await q.sequelize.query("DELETE FROM game_runtime_answers")
-    await q.sequelize.query("DELETE FROM game_team_states")
-    await q.sequelize.query("DELETE FROM game_round_configs")
-    await q.sequelize.query("DELETE FROM game_runtime")
-  },
+  async down() {},
 }
