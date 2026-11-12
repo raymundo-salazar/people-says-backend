@@ -7,6 +7,7 @@ export class Game extends Model<GameAttributes, GameCreationAttributes> implemen
   declare mode: GameAttributes["mode"]
   declare phase: string
   declare activeTeam: "blue" | "red" | null
+  declare activePlayerId: number | null
   declare hostToken: string
   declare state: Record<string, unknown>
   declare createdAt: Date
@@ -22,6 +23,7 @@ export function initializeGame(sequelize: Sequelize) {
       mode: { type: DataTypes.STRING(32), allowNull: false },
       phase: { type: DataTypes.STRING(32), allowNull: false, defaultValue: "lobby" },
       activeTeam: { type: DataTypes.STRING(8), allowNull: true, field: "active_team" },
+      activePlayerId: { type: DataTypes.INTEGER, allowNull: true, field: "active_player_id" },
       hostToken: {
         type: DataTypes.STRING(80),
         allowNull: false,

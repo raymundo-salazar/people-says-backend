@@ -100,6 +100,23 @@ const snapshot = (room: Room, privateView = false) => ({
   code: room.game.code,
   name: room.game.name,
   mode: room.game.mode,
+  activeTeam: room.game.activeTeam,
+  activePlayerId: room.game.activePlayerId,
+  activePlayer: (() => {
+    if (!room.game.activeTeam || !room.game.activePlayerId) return null
+    const state = room.game.state as StoredState
+    const teamIndex = state.teams.findIndex((team) => team.id === room.game.activeTeam)
+    const team = state.teams[teamIndex]
+    const playerIndex =
+      state.playerIds?.[room.game.activeTeam]?.indexOf(room.game.activePlayerId) ?? -1
+    return team && playerIndex >= 0
+      ? {
+          id: room.game.activePlayerId,
+          name: team.players[playerIndex],
+          team: room.game.activeTeam,
+        }
+      : null
+  })(),
   state: (() => {
     const state = structuredClone(room.game.state) as StoredState & {
       strikeLimit?: number
@@ -153,6 +170,12 @@ async function persist(room: Room, state: Record<string, unknown>) {
     (["faceoff", "decision", "tiebreaker"].includes(room.game.phase)
       ? (faceoff?.activeTeam ?? faceoff?.firstTeam)
       : (state.control as TeamId | null | undefined)) ?? null
+  const activePlayerIds = state.playerIds as Record<TeamId, number[]> | undefined
+  const turnIndex = state.turnIndex as Record<TeamId, number> | undefined
+  const activeTeam = room.game.activeTeam
+  room.game.activePlayerId = activeTeam
+    ? (activePlayerIds?.[activeTeam]?.[turnIndex?.[activeTeam] ?? 0] ?? null)
+    : null
   await room.game.save()
   return state
 }
