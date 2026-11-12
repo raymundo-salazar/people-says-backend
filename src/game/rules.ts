@@ -15,6 +15,7 @@ export type GameState = {
   control: TeamId | null
   revealed: number[]
   strikes: Record<TeamId, number>
+  faceoffStrikes: Record<TeamId, number>
   faceoffStrikeTeam?: TeamId
   pot: number
   faceoff?: {
@@ -73,6 +74,7 @@ export function createInitialState(
     control: null,
     revealed: [],
     strikes: { blue: 0, red: 0 },
+    faceoffStrikes: { blue: 0, red: 0 },
     pot: 0,
     faceoff: undefined,
     stealTeam: null,

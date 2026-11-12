@@ -84,6 +84,7 @@ const publicState = (state: Record<string, unknown>) => {
   return copy
 }
 const prepareFaceoff = (state: StoredState) => {
+  state.faceoffStrikes = { blue: 0, red: 0 }
   state.faceoffStrikeTeam = undefined
   state.faceoff = {
     bluePlayer: currentPlayer(state, "blue"),
@@ -422,6 +423,7 @@ async function applyAction(
     if (state.phase !== "decision" || state.control !== input.team)
       throw new Error("decision_not_active")
     if (input.winner === "pass") state.control = otherTeam(input.team)
+    state.faceoffStrikes = { blue: 0, red: 0 }
     state.faceoffStrikeTeam = undefined
     state.phase = "turn"
     state.strikes = { blue: 0, red: 0 }
@@ -458,6 +460,10 @@ async function applyAction(
       source: input.source === "timer" ? "timer" : "manual",
     })
     if (state.phase !== "turn") {
+      state.faceoffStrikes = {
+        ...(state.faceoffStrikes ?? { blue: 0, red: 0 }),
+        [input.team]: Math.min(3, (state.faceoffStrikes?.[input.team] ?? 0) + 1),
+      }
       state.faceoffStrikeTeam = input.team
       return persist(room, state)
     }
