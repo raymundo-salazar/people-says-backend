@@ -99,7 +99,18 @@ const snapshot = (room: Room, privateView = false) => ({
   code: room.game.code,
   name: room.game.name,
   mode: room.game.mode,
-  state: privateView ? room.game.state : publicState(room.game.state),
+  state: (() => {
+    const state = structuredClone(room.game.state) as StoredState & {
+      strikeLimit?: number
+      displayStrikes?: Record<TeamId, number>
+    }
+    const faceoffMode = ["faceoff", "decision", "tiebreaker"].includes(state.phase)
+    state.strikeLimit = faceoffMode ? 5 : 3
+    state.displayStrikes = faceoffMode
+      ? (state.faceoffStrikes ?? { blue: 0, red: 0 })
+      : state.strikes
+    return privateView ? state : publicState(state)
+  })(),
   devices: [...room.devices.values()],
 })
 async function loadRoom(code: string) {
