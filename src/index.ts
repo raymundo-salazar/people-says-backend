@@ -267,7 +267,7 @@ app.post("/api/rooms", async (req, res) => {
     const categoryIds = requestedCategoryIds.length
       ? (await database.query<{ id: number }>("SELECT id FROM categories WHERE id IN (:ids)", { replacements: { ids: requestedCategoryIds }, type: QueryTypes.SELECT })).map((category) => category.id)
       : (await database.query<{ id: number }>("SELECT id FROM categories ORDER BY id", { type: QueryTypes.SELECT })).map((category) => category.id)
-    if (!categoryIds.length) throw new Error("category_required")
+    if (categoryIds.length !== 1) throw new Error("exactly_one_category_required")
     const selected = await questionFor(configs[0].answerCount, undefined, categoryIds)
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
@@ -331,7 +331,7 @@ app.get("/api/questions/random", async (req, res) => {
   }
 })
 app.get("/api/categories", async (_req, res) => {
-  const categories = await database.query("SELECT id, name, description FROM categories ORDER BY id", { type: QueryTypes.SELECT })
+  const categories = await database.query('SELECT categories.id, categories.name, categories.description, COUNT(questions.id) AS "questionCount" FROM categories LEFT JOIN questions ON questions.category_id = categories.id GROUP BY categories.id, categories.name, categories.description ORDER BY categories.id', { type: QueryTypes.SELECT })
   return res.json(categories)
 })
 app.get("/api/rooms/:code", async (req, res) => {
