@@ -672,6 +672,7 @@ io.on("connection", (socket) => {
         return socket.emit("game:error", { error: "host_required" })
       try {
         await applyAction(room, payload.action)
+        if (payload.action.type === "strike") io.to(room.game.code).emit("game:strike")
         emitState(io, room)
         scheduleAuto(room)
       } catch (error) {
