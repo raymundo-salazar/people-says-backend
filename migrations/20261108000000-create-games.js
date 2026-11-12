@@ -7,6 +7,8 @@ module.exports = {
       name: { type: S.STRING(120) },
       mode: { type: S.STRING(32), allowNull: false },
       phase: { type: S.STRING(32), allowNull: false, defaultValue: "lobby" },
+      active_team: { type: S.STRING(8), allowNull: true },
+      active_player_id: { type: S.INTEGER, allowNull: true },
       state: { type: S.JSON, allowNull: false },
       host_token: { type: S.STRING(80), allowNull: true, unique: true },
       created_at: { type: S.DATE, allowNull: false, defaultValue: S.NOW },
