@@ -1,6 +1,14 @@
 "use strict"
+const { QueryTypes } = require("sequelize")
 module.exports = {
   async up(q) {
+    const columns = await q.sequelize.query(
+      q.sequelize.getDialect() === "sqlite"
+        ? "PRAGMA table_info(games)"
+        : "SELECT column_name AS name FROM information_schema.columns WHERE table_name = 'games'",
+      { type: QueryTypes.SELECT }
+    )
+    if (!columns.some((column) => column.name === "state")) return
     const [games] = await q.sequelize.query("SELECT * FROM games")
     for (const game of games) {
       const state = typeof game.state === "string" ? JSON.parse(game.state) : (game.state || {})
