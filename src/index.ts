@@ -746,7 +746,12 @@ io.on("connection", (socket) => {
       return room && socket.emit("buzzer:locked", { winner: room.buzzerWinner })
     room.buzzerWinner = payload.team
     const state = room.game.state as StoredState
-    if (["faceoff", "tiebreaker"].includes(state.phase)) state.faceoff = { firstTeam: payload.team }
+    if (["faceoff", "tiebreaker"].includes(state.phase))
+      state.faceoff = {
+        ...(state.faceoff ?? {}),
+        firstTeam: payload.team,
+        activeTeam: payload.team,
+      }
     await persist(room, state)
     io.to(room.game.code).emit("buzzer:winner", { winner: payload.team })
     emitState(io, room)
