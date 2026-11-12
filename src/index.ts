@@ -267,14 +267,14 @@ app.post("/api/rooms", async (req, res) => {
     const categoryIds = requestedCategoryIds.length
       ? (await database.query<{ id: number }>("SELECT id FROM categories WHERE id IN (:ids)", { replacements: { ids: requestedCategoryIds }, type: QueryTypes.SELECT })).map((category) => category.id)
       : (await database.query<{ id: number }>("SELECT id FROM categories ORDER BY id", { type: QueryTypes.SELECT })).map((category) => category.id)
-    if (categoryIds.length !== 1) throw new Error("exactly_one_category_required")
+    if (!categoryIds.length) throw new Error("category_required")
     const selected = await questionFor(configs[0].answerCount, undefined, categoryIds)
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
     state.answerIds = selected.answers.map((a) => a.id)
     state.answers = selected.answers.map((a) => ({
       text: a.text,
-      points: a.points,
+      points: a.votes,
       position: a.position,
     }))
     const game = await Game.create({
@@ -291,7 +291,7 @@ app.post("/api/rooms", async (req, res) => {
     await database.query("INSERT INTO game_runtime (game_id, question_id, round_index, pot, created_at, updated_at) VALUES (:gameId,:questionId,0,0,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, questionId: selected.question.id } })
     for (const [teamIndex, key] of ["blue", "red"].entries()) await database.query("INSERT INTO game_team_states (game_id, team_key, team_name, created_at, updated_at) VALUES (:gameId,:key,:name,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, key, name: teams[teamIndex].name } })
     for (let i = 0; i < configs.length; i++) await database.query("INSERT INTO game_round_configs (game_id, round_index, answer_count, multiplier, created_at, updated_at) VALUES (:gameId,:roundIndex,:answerCount,:multiplier,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, roundIndex: i, answerCount: configs[i].answerCount, multiplier: configs[i].multiplier } })
-    for (const [index, answer] of selected.answers.entries()) await database.query("INSERT INTO game_runtime_answers (game_id, answer_index, answer_id, text, points, position, created_at, updated_at) VALUES (:gameId,:index,:answerId,:text,:points,:position,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, index, answerId: answer.id, text: answer.text, points: answer.points, position: answer.position } })
+    for (const [index, answer] of selected.answers.entries()) await database.query("INSERT INTO game_runtime_answers (game_id, answer_index, answer_id, text, points, position, created_at, updated_at) VALUES (:gameId,:index,:answerId,:text,:points,:position,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, index, answerId: answer.id, text: answer.text, points: answer.votes, position: answer.position } })
     const room = { game, state, devices: new Map<string, Device>(), buzzerWinner: null }
     for (const team of teams) {
       const dbTeam = await Team.create({ gameId: game.id, color: team.id, name: team.name })
@@ -307,7 +307,7 @@ app.post("/api/rooms", async (req, res) => {
       question: {
         id: selected.question.id,
         prompt: selected.question.prompt,
-        answers: selected.answers.map((a) => ({ text: a.text, points: a.points })),
+        answers: selected.answers.map((a) => ({ text: a.text, points: a.votes })),
       },
     })
   } catch (error) {
@@ -324,7 +324,7 @@ app.get("/api/questions/random", async (req, res) => {
     return res.json({
       id: selected.question.id,
       prompt: selected.question.prompt,
-      answers: selected.answers.map((a) => ({ text: a.text, points: a.points })),
+      answers: selected.answers.map((a) => ({ text: a.text, points: a.votes })),
     })
   } catch {
     return res.status(404).json({ error: "question_not_found" })
@@ -712,7 +712,7 @@ async function applyAction(
     state.answerIds = selected.answers.map((a) => a.id)
     state.answers = selected.answers.map((a) => ({
       text: a.text,
-      points: a.points,
+      points: a.votes,
       position: a.position,
     }))
     state.revealed = []
