@@ -245,7 +245,7 @@ const snapshot = (room: Room, privateView = false) => ({
       displayStrikes?: Record<TeamId, number>
     }
     const faceoffMode = ["faceoff", "decision", "tiebreaker"].includes(state.phase)
-    state.strikeLimit = faceoffMode ? 5 : 3
+    state.strikeLimit = faceoffMode ? 5 : state.phase === "steal" ? 1 : 3
     state.displayStrikes = faceoffMode
       ? (state.faceoffStrikes ?? { blue: 0, red: 0 })
       : state.strikes
@@ -1011,12 +1011,32 @@ async function applyAction(
     if (!answer) throw new Error("answer_not_found")
     if (state.revealed.includes(input.index!)) throw new Error("answer_already_revealed")
     const faceoffMode = ["faceoff", "decision", "tiebreaker"].includes(state.phase)
-    if ((!faceoffMode && state.phase !== "turn") || (!faceoffMode && !state.control))
+    const stealMode = state.phase === "steal"
+    if (
+      (!faceoffMode && !stealMode && state.phase !== "turn") ||
+      (!faceoffMode && !stealMode && !state.control)
+    )
       throw new Error("turn_not_active")
-    const team = faceoffMode
-      ? (state.faceoff?.activeTeam ?? state.faceoff?.firstTeam)
-      : state.control
+    const team = stealMode
+      ? state.stealTeam
+      : faceoffMode
+        ? (state.faceoff?.activeTeam ?? state.faceoff?.firstTeam)
+        : state.control
     if (!team) throw new Error("turn_not_active")
+    if (stealMode) {
+      const next = { ...state, revealed: [...state.revealed, input.index!] }
+      await QuestionResponse.create({
+        questionId: state.questionId,
+        answerId: state.answerIds[input.index!],
+        gameId: room.game.id,
+        teamId: state.teamIds?.[team] ?? null,
+        playerId: state.playerIds?.[team]?.[state.turnIndex[team]] ?? null,
+        submittedText: answer.text,
+        isValid: true,
+        awardedPoints: state.pot,
+      })
+      return persist(room, finishRound(next, team))
+    }
     const next = revealAnswer(state, answer, input.index!)
     await QuestionResponse.create({
       questionId: state.questionId,
@@ -1074,8 +1094,21 @@ async function applyAction(
     return persist(room, next)
   }
   if (input.type === "strike" && input.team) {
-    if (!["faceoff", "decision", "tiebreaker", "turn"].includes(state.phase))
+    if (!["faceoff", "decision", "tiebreaker", "turn", "steal"].includes(state.phase))
       throw new Error("strike_not_active")
+    if (state.phase === "steal") {
+      if (state.stealTeam !== input.team) throw new Error("not_steal_team")
+      await GameStrike.create({
+        gameId: room.game.id,
+        questionId: state.questionId,
+        teamId: state.teamIds?.[input.team] ?? null,
+        playerId: state.playerIds?.[input.team]?.[state.turnIndex[input.team]] ?? null,
+        roundIndex: state.roundIndex,
+        phase: "steal",
+        source: input.source === "timer" ? "timer" : "manual",
+      })
+      return persist(room, finishRound(state, state.control!))
+    }
     await GameStrike.create({
       gameId: room.game.id,
       questionId: state.questionId,
@@ -1295,9 +1328,11 @@ io.on("connection", (socket) => {
         if (payload.action.type === "strike" && payload.action.team) {
           const updatedState = room.state
           const count =
-            actionPhase === "turn"
-              ? updatedState.strikes[payload.action.team]
-              : (updatedState.faceoffStrikes?.[payload.action.team] ?? 1)
+            actionPhase === "steal"
+              ? 1
+              : actionPhase === "turn"
+                ? updatedState.strikes[payload.action.team]
+                : (updatedState.faceoffStrikes?.[payload.action.team] ?? 1)
           io.to(room.game.code).emit("game:strike", { count, team: payload.action.team })
         }
         if (payload.action.type === "reveal_answer")
