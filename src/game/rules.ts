@@ -93,7 +93,11 @@ export function advancePlayer(state: GameState, team: TeamId): GameState {
   }
 }
 export function revealAnswer(state: GameState, answer: SurveyAnswer, index: number): GameState {
-  if (state.phase !== "turn" || state.revealed.includes(index)) return state
+  if (
+    !["turn", "faceoff", "decision", "tiebreaker"].includes(state.phase) ||
+    state.revealed.includes(index)
+  )
+    return state
   const next = {
     ...state,
     revealed: [...state.revealed, index],

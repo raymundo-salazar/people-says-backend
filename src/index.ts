@@ -448,8 +448,14 @@ async function applyAction(
   if (input.type === "reveal_answer" && Number.isInteger(input.index)) {
     const answer = state.answers[input.index!]
     if (!answer) throw new Error("answer_not_found")
-    if (state.phase !== "turn" || !state.control) throw new Error("turn_not_active")
-    const team = state.control
+    if (state.revealed.includes(input.index!)) throw new Error("answer_already_revealed")
+    const faceoffMode = ["faceoff", "decision", "tiebreaker"].includes(state.phase)
+    if ((!faceoffMode && state.phase !== "turn") || (!faceoffMode && !state.control))
+      throw new Error("turn_not_active")
+    const team = faceoffMode
+      ? (state.faceoff?.activeTeam ?? state.faceoff?.firstTeam)
+      : state.control
+    if (!team) throw new Error("turn_not_active")
     const next = revealAnswer(state, answer, input.index!)
     await QuestionResponse.create({
       questionId: state.questionId,
