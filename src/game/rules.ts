@@ -18,6 +18,8 @@ export type GameState = {
   faceoffStrikes: Record<TeamId, number>
   faceoffStrikeTeam?: TeamId
   pot: number
+  roundWinner?: TeamId | null
+  roundPoints?: number
   faceoff?: {
     bluePlayer?: string
     redPlayer?: string
@@ -123,6 +125,8 @@ export function finishRound(state: GameState, winner: TeamId): GameState {
   return {
     ...state,
     scores,
+    roundWinner: winner,
+    roundPoints: state.pot,
     phase: final ? (scores.blue === scores.red ? "tiebreaker" : "final") : "round_result",
     control: null,
   }

@@ -60,6 +60,8 @@ type StoredState = GameState & {
   teamIds?: Record<TeamId, number>
   playerIds?: Record<TeamId, number[]>
   roundQuestions?: Array<{ roundIndex: number; questionId: number; prompt: string }>
+  roundWinner?: TeamId | null
+  roundPoints?: number
 }
 const rooms = new Map<string, Room>()
 const app = express()
@@ -173,6 +175,8 @@ async function normalizedState(game: Game): Promise<StoredState> {
     },
     faceoffStrikeTeam: runtime?.faceoff_strike_team ?? undefined,
     pot: runtime?.pot ?? 0,
+    roundWinner: runtime?.round_winner ?? null,
+    roundPoints: runtime?.round_points ?? 0,
     stealTeam: runtime?.steal_team ?? null,
     questionId: runtime?.question_id,
     questionPrompt: "",
@@ -382,7 +386,7 @@ async function persist(room: Room, state: Record<string, unknown>) {
       })
   }
   await database.query(
-    "UPDATE game_runtime SET question_id=:questionId, round_index=:roundIndex, pot=:pot, control=:control, steal_team=:stealTeam, faceoff_strike_team=:faceoffStrikeTeam, faceoff_first_team=:firstTeam, faceoff_first_index=:firstIndex, faceoff_second_team=:secondTeam, faceoff_second_index=:secondIndex, updated_at=CURRENT_TIMESTAMP WHERE game_id=:gameId",
+    "UPDATE game_runtime SET question_id=:questionId, round_index=:roundIndex, pot=:pot, control=:control, steal_team=:stealTeam, round_winner=:roundWinner, round_points=:roundPoints, faceoff_strike_team=:faceoffStrikeTeam, faceoff_first_team=:firstTeam, faceoff_first_index=:firstIndex, faceoff_second_team=:secondTeam, faceoff_second_index=:secondIndex, updated_at=CURRENT_TIMESTAMP WHERE game_id=:gameId",
     {
       replacements: {
         gameId: room.game.id,
@@ -391,6 +395,8 @@ async function persist(room: Room, state: Record<string, unknown>) {
         pot: typed.pot,
         control: typed.control ?? null,
         stealTeam: typed.stealTeam ?? null,
+        roundWinner: typed.roundWinner ?? null,
+        roundPoints: typed.roundPoints ?? 0,
         faceoffStrikeTeam: typed.faceoffStrikeTeam ?? null,
         firstTeam: typed.faceoff?.firstTeam ?? null,
         firstIndex: typed.faceoff?.firstIndex ?? null,
@@ -938,6 +944,8 @@ async function applyAction(
     state.revealed = []
     state.strikes = { blue: 0, red: 0 }
     state.pot = 0
+    state.roundWinner = null
+    state.roundPoints = 0
     state.control = null
     state.faceoff = undefined
     state.stealTeam = null
@@ -951,6 +959,8 @@ async function applyAction(
     state.revealed = []
     state.strikes = { blue: 0, red: 0 }
     state.pot = 0
+    state.roundWinner = null
+    state.roundPoints = 0
     state.control = null
     state.faceoff = undefined
     state.stealTeam = null
@@ -1212,6 +1222,8 @@ async function applyAction(
     state.revealed = []
     state.strikes = { blue: 0, red: 0 }
     state.pot = 0
+    state.roundWinner = null
+    state.roundPoints = 0
     state.control = null
     state.faceoff = undefined
     state.stealTeam = null
