@@ -353,6 +353,7 @@ app.post("/api/rooms", async (req, res) => {
       },
     })
   } catch (error) {
+    console.error("room_creation_failed", error)
     return res
       .status(400)
       .json({ error: error instanceof Error ? error.message : "room_creation_failed" })
