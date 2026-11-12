@@ -749,6 +749,8 @@ io.on("connection", (socket) => {
     if (["faceoff", "tiebreaker"].includes(state.phase))
       state.faceoff = {
         ...(state.faceoff ?? {}),
+        bluePlayer: state.faceoff?.bluePlayer ?? currentPlayer(state, "blue"),
+        redPlayer: state.faceoff?.redPlayer ?? currentPlayer(state, "red"),
         firstTeam: payload.team,
         activeTeam: payload.team,
       }
