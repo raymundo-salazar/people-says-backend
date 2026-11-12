@@ -1,6 +1,8 @@
 node_modules/
 dist/
 data/
+!seeders/data/
+!seeders/data/**
 *.sqlite
 .env
 _*

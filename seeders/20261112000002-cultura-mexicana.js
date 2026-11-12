@@ -22,8 +22,8 @@ module.exports = {
   async up(queryInterface) {
     const [category] = await queryInterface.sequelize.query("SELECT id FROM categories WHERE name = 'Cultura mexicana' LIMIT 1")
     if (!category.length) throw new Error("cultura_mexicana_category_required")
-    const filePath = path.resolve(process.cwd(), "_cultura_mexicana.csv")
-    if (!fs.existsSync(filePath)) throw new Error("_cultura_mexicana.csv_not_found")
+    const filePath = path.resolve(process.cwd(), "seeders/data/cultura-mexicana.csv")
+    if (!fs.existsSync(filePath)) throw new Error("cultura_mexicana_csv_not_found")
     const [header, ...lines] = fs.readFileSync(filePath, "utf8").trim().split(/\r?\n/)
     const headers = parseCsvLine(header).map((item) => item.replace(/^\uFEFF/, "").trim())
     const position = Object.fromEntries(headers.map((name, index) => [name, index]))
@@ -35,7 +35,7 @@ module.exports = {
       const answer = row[position.respuesta]?.trim()
       if (!prompt || !answer) continue
       if (!questions.has(prompt)) questions.set(prompt, { answerCount: Number(row[position.cantidad_respuestas]), answers: [] })
-      questions.get(prompt).answers.push({ text: answer, votes: Number(row[position.votos_respuesta_simulados]) || 0, position: Number(row[position.posicion]) || questions.get(prompt).answers.length + 1 })
+      questions.get(prompt).answers.push({ text: answer, votes: Number(row[position.votos]) || 0, position: Number(row[position.posicion]) || questions.get(prompt).answers.length + 1 })
     }
     for (const [prompt, data] of questions) {
       const [existing] = await queryInterface.sequelize.query("SELECT id FROM questions WHERE prompt = :prompt LIMIT 1", { replacements: { prompt } })
