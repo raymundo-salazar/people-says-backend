@@ -171,11 +171,13 @@ async function loadRoom(code: string) {
   rooms.set(normalized, room)
   return room
 }
-async function questionFor(count: number) {
-  const question = await Question.findOne({
-    where: { answersCount: count },
-    order: [["id", "ASC"]],
-  })
+async function questionFor(count: number, gameId?: number, categoryIds?: number[]) {
+  const where: any = { answersCount: count }
+  if (gameId) {
+    const rows = await database.query<{ question_id: number }>("SELECT question_id FROM game_questions WHERE game_id=:gameId", { replacements: { gameId }, type: QueryTypes.SELECT })
+    where.id = rows.map((row) => row.question_id)
+  } else if (categoryIds?.length) where.categoryId = categoryIds
+  const question = await Question.findOne({ where, order: [["id", "ASC"]] })
   if (!question) throw new Error("question_not_found")
   const answers = await Answer.findAll({
     where: { questionId: question.id },
@@ -261,7 +263,12 @@ app.post("/api/rooms", async (req, res) => {
     let code = ""
     do code = makeCode()
     while (await Game.findOne({ where: { code } }))
-    const selected = await questionFor(configs[0].answerCount)
+    const requestedCategoryIds = Array.isArray(req.body?.categoryIds) ? req.body.categoryIds.map(Number).filter(Number.isInteger) : []
+    const categoryIds = requestedCategoryIds.length
+      ? (await database.query<{ id: number }>("SELECT id FROM categories WHERE id IN (:ids)", { replacements: { ids: requestedCategoryIds }, type: QueryTypes.SELECT })).map((category) => category.id)
+      : (await database.query<{ id: number }>("SELECT id FROM categories ORDER BY id", { type: QueryTypes.SELECT })).map((category) => category.id)
+    if (!categoryIds.length) throw new Error("category_required")
+    const selected = await questionFor(configs[0].answerCount, undefined, categoryIds)
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
     state.answerIds = selected.answers.map((a) => a.id)
@@ -279,6 +286,8 @@ app.post("/api/rooms", async (req, res) => {
       phase: state.phase,
       hostToken,
     })
+    await database.query("INSERT INTO game_categories (game_id, category_id, created_at, updated_at) SELECT :gameId, id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP FROM categories WHERE id IN (:categoryIds)", { replacements: { gameId: game.id, categoryIds } })
+    await database.query("INSERT INTO game_questions (game_id, question_id, created_at, updated_at) SELECT :gameId, id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP FROM questions WHERE category_id IN (:categoryIds)", { replacements: { gameId: game.id, categoryIds } })
     await database.query("INSERT INTO game_runtime (game_id, question_id, round_index, pot, created_at, updated_at) VALUES (:gameId,:questionId,0,0,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, questionId: selected.question.id } })
     for (const [teamIndex, key] of ["blue", "red"].entries()) await database.query("INSERT INTO game_team_states (game_id, team_key, team_name, created_at, updated_at) VALUES (:gameId,:key,:name,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, key, name: teams[teamIndex].name } })
     for (let i = 0; i < configs.length; i++) await database.query("INSERT INTO game_round_configs (game_id, round_index, answer_count, multiplier, created_at, updated_at) VALUES (:gameId,:roundIndex,:answerCount,:multiplier,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, roundIndex: i, answerCount: configs[i].answerCount, multiplier: configs[i].multiplier } })
@@ -320,6 +329,10 @@ app.get("/api/questions/random", async (req, res) => {
   } catch {
     return res.status(404).json({ error: "question_not_found" })
   }
+})
+app.get("/api/categories", async (_req, res) => {
+  const categories = await database.query("SELECT id, name, description FROM categories ORDER BY id", { type: QueryTypes.SELECT })
+  return res.json(categories)
 })
 app.get("/api/rooms/:code", async (req, res) => {
   const room = await loadRoom(req.params.code)
@@ -693,7 +706,7 @@ async function applyAction(
       state.phase = "final"
       return persist(room, state)
     }
-    const selected = await questionFor(config.answerCount)
+    const selected = await questionFor(config.answerCount, room.game.id)
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
     state.answerIds = selected.answers.map((a) => a.id)
