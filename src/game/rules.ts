@@ -22,6 +22,7 @@ export type GameState = {
     bluePlayer?: string
     redPlayer?: string
     firstTeam?: TeamId
+    activeTeam?: TeamId
     firstIndex?: number
     secondTeam?: TeamId
     secondIndex?: number

@@ -414,7 +414,12 @@ async function applyAction(
     if (!["faceoff", "tiebreaker"].includes(state.phase)) throw new Error("faceoff_not_active")
     const attempt = state.faceoff
     if (!attempt || attempt.firstTeam === undefined) {
-      state.faceoff = { ...attempt, firstTeam: input.team, firstIndex: index }
+      state.faceoff = {
+        ...attempt,
+        firstTeam: input.team,
+        activeTeam: input.team,
+        firstIndex: index,
+      }
       if (index === 0) {
         state.control = input.team
         state.phase = "decision"
@@ -476,6 +481,10 @@ async function applyAction(
         [input.team]: Math.min(5, (state.faceoffStrikes?.[input.team] ?? 0) + 1),
       }
       state.faceoffStrikeTeam = input.team
+      state.faceoff = {
+        ...(state.faceoff ?? {}),
+        activeTeam: otherTeam(input.team),
+      }
       return persist(room, state)
     }
     const next = registerStrike(state, input.team)
