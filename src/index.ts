@@ -185,6 +185,30 @@ async function questionFor(count: number, gameId?: number, categoryIds?: number[
   })
   return { question, answers }
 }
+async function candidateQuestion(count: number, categoryIds: number[], excludedIds: number[] = []) {
+  const questions = await Question.findAll({ where: { answersCount: count, categoryId: categoryIds, id: excludedIds.length ? { [Op.notIn]: excludedIds } : undefined } })
+  const shuffled = [...questions].sort(() => Math.random() - 0.5)
+  const question = shuffled[0]
+  if (!question) throw new Error("question_not_found")
+  return { id: question.id, prompt: question.prompt, answerCount: question.answersCount, categoryId: question.categoryId }
+}
+function calculatePoints(answers: Array<{ votes: number; text: string; position: number; id: number }>) {
+  const total = answers.reduce((sum, answer) => sum + answer.votes, 0)
+  if (!total) throw new Error("question_votes_required")
+  const exact = answers.map((answer) => (answer.votes * 100) / total)
+  const points = exact.map(Math.floor)
+  let remaining = 100 - points.reduce((sum, value) => sum + value, 0)
+  const order = exact.map((value, index) => ({ index, remainder: value - Math.floor(value) })).sort((a, b) => b.remainder - a.remainder || answers[a.index].position - answers[b.index].position)
+  for (let i = 0; i < remaining; i++) points[order[i].index] += 1
+  return answers.map((answer, index) => ({ ...answer, points: points[index] }))
+}
+async function prepareQuestion(questionId: number, answerCount: number, categoryIds: number[]) {
+  const question = await Question.findOne({ where: { id: questionId, categoryId: categoryIds } })
+  if (!question || question.answersCount < answerCount) throw new Error("question_does_not_have_enough_answers")
+  const answers = await Answer.findAll({ where: { questionId }, order: [["votes", "DESC"], ["position", "ASC"]], limit: answerCount })
+  if (answers.length < answerCount) throw new Error("question_does_not_have_enough_answers")
+  return { question, answers: calculatePoints(answers.map((answer) => ({ id: answer.id, text: answer.text, votes: answer.votes, position: answer.position }))) }
+}
 async function persist(room: Room, state: Record<string, unknown>) {
   room.state = state as StoredState
   room.game.phase = typeof state.phase === "string" ? state.phase : "lobby"
@@ -268,13 +292,25 @@ app.post("/api/rooms", async (req, res) => {
       ? (await database.query<{ id: number }>("SELECT id FROM categories WHERE id IN (:ids)", { replacements: { ids: requestedCategoryIds }, type: QueryTypes.SELECT })).map((category) => category.id)
       : (await database.query<{ id: number }>("SELECT id FROM categories ORDER BY id", { type: QueryTypes.SELECT })).map((category) => category.id)
     if (!categoryIds.length) throw new Error("category_required")
-    const selected = await questionFor(configs[0].answerCount, undefined, categoryIds)
+    const requestedQuestions = Array.isArray(req.body?.questions) ? req.body.questions : []
+    const usedQuestionIds = new Set<number>()
+    const preparedQuestions = []
+    for (let index = 0; index < configs.length; index++) {
+      const requestedId = Number(requestedQuestions[index]?.id)
+      const candidate = Number.isInteger(requestedId) && requestedId > 0 && !usedQuestionIds.has(requestedId)
+        ? await prepareQuestion(requestedId, configs[index].answerCount, categoryIds)
+        : null
+      const prepared = candidate ?? await prepareQuestion((await candidateQuestion(configs[index].answerCount, categoryIds, [...usedQuestionIds])).id, configs[index].answerCount, categoryIds)
+      usedQuestionIds.add(prepared.question.id)
+      preparedQuestions.push(prepared)
+    }
+    const selected = preparedQuestions[0]
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
     state.answerIds = selected.answers.map((a) => a.id)
     state.answers = selected.answers.map((a) => ({
       text: a.text,
-      points: a.votes,
+      points: a.points,
       position: a.position,
     }))
     const game = await Game.create({
@@ -288,10 +324,15 @@ app.post("/api/rooms", async (req, res) => {
     })
     await database.query("INSERT INTO game_categories (game_id, category_id, created_at, updated_at) SELECT :gameId, id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP FROM categories WHERE id IN (:categoryIds)", { replacements: { gameId: game.id, categoryIds } })
     await database.query("INSERT INTO game_questions (game_id, question_id, created_at, updated_at) SELECT :gameId, id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP FROM questions WHERE category_id IN (:categoryIds)", { replacements: { gameId: game.id, categoryIds } })
+    for (const [roundIndex, prepared] of preparedQuestions.entries()) {
+      const [roundQuestion] = await database.query<any>("INSERT INTO game_round_questions (game_id, round_index, question_id, created_at, updated_at) VALUES (:gameId,:roundIndex,:questionId,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP) RETURNING id", { replacements: { gameId: game.id, roundIndex, questionId: prepared.question.id }, type: QueryTypes.SELECT })
+      const roundQuestionId = roundQuestion.id
+      for (const answer of prepared.answers) await database.query("INSERT INTO game_question_answers (game_round_question_id, answer_id, text, votes, points, position, created_at, updated_at) VALUES (:roundQuestionId,:answerId,:text,:votes,:points,:position,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { roundQuestionId, answerId: answer.id, text: answer.text, votes: answer.votes, points: answer.points, position: answer.position } })
+    }
     await database.query("INSERT INTO game_runtime (game_id, question_id, round_index, pot, created_at, updated_at) VALUES (:gameId,:questionId,0,0,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, questionId: selected.question.id } })
     for (const [teamIndex, key] of ["blue", "red"].entries()) await database.query("INSERT INTO game_team_states (game_id, team_key, team_name, created_at, updated_at) VALUES (:gameId,:key,:name,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, key, name: teams[teamIndex].name } })
     for (let i = 0; i < configs.length; i++) await database.query("INSERT INTO game_round_configs (game_id, round_index, answer_count, multiplier, created_at, updated_at) VALUES (:gameId,:roundIndex,:answerCount,:multiplier,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, roundIndex: i, answerCount: configs[i].answerCount, multiplier: configs[i].multiplier } })
-    for (const [index, answer] of selected.answers.entries()) await database.query("INSERT INTO game_runtime_answers (game_id, answer_index, answer_id, text, points, position, created_at, updated_at) VALUES (:gameId,:index,:answerId,:text,:points,:position,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, index, answerId: answer.id, text: answer.text, points: answer.votes, position: answer.position } })
+    for (const [index, answer] of selected.answers.entries()) await database.query("INSERT INTO game_runtime_answers (game_id, answer_index, answer_id, text, points, position, created_at, updated_at) VALUES (:gameId,:index,:answerId,:text,:points,:position,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)", { replacements: { gameId: game.id, index, answerId: answer.id, text: answer.text, points: answer.points, position: answer.position } })
     const room = { game, state, devices: new Map<string, Device>(), buzzerWinner: null }
     for (const team of teams) {
       const dbTeam = await Team.create({ gameId: game.id, color: team.id, name: team.name })
@@ -307,7 +348,7 @@ app.post("/api/rooms", async (req, res) => {
       question: {
         id: selected.question.id,
         prompt: selected.question.prompt,
-        answers: selected.answers.map((a) => ({ text: a.text, points: a.votes })),
+        answers: selected.answers.map((a) => ({ text: a.text, points: a.points })),
       },
     })
   } catch (error) {
@@ -333,6 +374,15 @@ app.get("/api/questions/random", async (req, res) => {
 app.get("/api/categories", async (_req, res) => {
   const categories = await database.query('SELECT categories.id, categories.name, categories.description, COUNT(questions.id) AS "questionCount" FROM categories LEFT JOIN questions ON questions.category_id = categories.id GROUP BY categories.id, categories.name, categories.description ORDER BY categories.id', { type: QueryTypes.SELECT })
   return res.json(categories)
+})
+app.get("/api/questions/selection", async (req, res) => {
+  try {
+    const categoryIds = String(req.query.categoryIds ?? "").split(",").map(Number).filter(Number.isInteger)
+    const excludedIds = String(req.query.excludeIds ?? "").split(",").map(Number).filter(Number.isInteger)
+    const answerCount = Number(req.query.answerCount)
+    if (!categoryIds.length || ![4, 5, 6, 8, 10].includes(answerCount)) return res.status(400).json({ error: "invalid_question_selection" })
+    return res.json(await candidateQuestion(answerCount, categoryIds, excludedIds))
+  } catch (error) { return res.status(404).json({ error: error instanceof Error ? error.message : "question_not_found" }) }
 })
 app.get("/api/rooms/:code", async (req, res) => {
   const room = await loadRoom(req.params.code)
