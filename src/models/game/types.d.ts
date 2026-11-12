@@ -2,7 +2,7 @@ export interface GameAttributes {
   id: number
   code: string
   name: string | null
-  mode: "classic" | "stage" | "buttons" | "auto"
+  mode: "classic" | "auto"
   phase: string
   activeTeam: "blue" | "red" | null
   activePlayerId: number | null
@@ -13,7 +13,7 @@ export interface GameAttributes {
 export interface GameCreationAttributes {
   code: string
   name?: string | null
-  mode: "classic" | "stage" | "buttons" | "auto"
+  mode: "classic" | "auto"
   phase?: string
   activeTeam?: "blue" | "red" | null
   activePlayerId?: number | null

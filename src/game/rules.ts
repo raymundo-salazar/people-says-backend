@@ -1,5 +1,5 @@
 export type TeamId = "blue" | "red"
-export type GameMode = "classic" | "stage" | "buttons" | "auto"
+export type GameMode = "classic" | "auto"
 export type RoundConfig = { answerCount: number; multiplier: 1 | 2 | 3 }
 export type TeamConfig = { id: TeamId; name: string; players: string[] }
 export type SurveyAnswer = { text: string; points: number; position: number }

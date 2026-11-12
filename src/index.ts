@@ -273,7 +273,7 @@ app.post("/api/rooms", async (req, res) => {
     const game = await Game.create({
       code,
       name: req.body?.name ?? "La gente dice",
-      mode: ["classic", "stage", "buttons", "auto"].includes(req.body?.mode)
+      mode: ["classic", "auto"].includes(req.body?.mode)
         ? req.body.mode
         : "classic",
       phase: state.phase,
@@ -333,7 +333,7 @@ app.patch("/api/rooms/:code", async (req, res) => {
   const name = typeof req.body?.name === "string" ? req.body.name.trim() : room.game.name
   const mode = req.body?.mode
   if (!name) return res.status(400).json({ error: "game_name_required" })
-  if (mode !== undefined && !["classic", "stage", "buttons", "auto"].includes(mode))
+  if (mode !== undefined && !["classic", "auto"].includes(mode))
     return res.status(400).json({ error: "invalid_mode" })
   room.game.name = name
   if (mode !== undefined) room.game.mode = mode
