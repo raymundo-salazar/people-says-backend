@@ -19,6 +19,7 @@ import {
 } from "./models/index.js"
 import {
   createInitialState,
+  advancePlayer,
   currentPlayer,
   finishRound,
   otherTeam,
@@ -467,6 +468,48 @@ async function applyAction(
       isValid: true,
       awardedPoints: answer.points,
     })
+    if (faceoffMode) {
+      const attempt = state.faceoff ?? {}
+      const firstTeam = attempt.firstTeam ?? team
+      const firstIndex = attempt.firstIndex
+
+      if (state.faceoffStrikeTeam && team !== state.faceoffStrikeTeam) {
+        next.control = team
+        next.phase = "turn"
+        next.turnIndex = advancePlayer(next, team).turnIndex
+        next.faceoffStrikes = { blue: 0, red: 0 }
+        next.faceoffStrikeTeam = undefined
+        next.faceoff = undefined
+        return persist(room, next)
+      }
+
+      if (firstIndex === undefined) {
+        next.faceoff = {
+          ...attempt,
+          firstTeam: team,
+          firstIndex: input.index!,
+          activeTeam: otherTeam(team),
+        }
+        if (answer.position === 1) {
+          next.control = team
+          next.phase = "turn"
+          next.turnIndex = advancePlayer(next, team).turnIndex
+          next.faceoffStrikes = { blue: 0, red: 0 }
+          next.faceoff = undefined
+        }
+        return persist(room, next)
+      }
+
+      const first = state.answers[firstIndex]
+      const winner = answer.points > first.points ? team : firstTeam
+      next.control = winner
+      next.phase = "turn"
+      next.turnIndex = advancePlayer(next, winner).turnIndex
+      next.faceoffStrikes = { blue: 0, red: 0 }
+      next.faceoffStrikeTeam = undefined
+      next.faceoff = undefined
+      return persist(room, next)
+    }
     return persist(room, next)
   }
   if (input.type === "strike" && input.team) {
@@ -482,6 +525,15 @@ async function applyAction(
       source: input.source === "timer" ? "timer" : "manual",
     })
     if (state.phase !== "turn") {
+      if (state.faceoffStrikeTeam && state.faceoffStrikeTeam !== input.team) {
+        state.faceoffStrikeTeam = undefined
+        state.faceoff = {
+          ...(state.faceoff ?? {}),
+          activeTeam: otherTeam(input.team),
+          firstIndex: undefined,
+        }
+        return persist(room, state)
+      }
       state.faceoffStrikes = {
         ...(state.faceoffStrikes ?? { blue: 0, red: 0 }),
         [input.team]: Math.min(5, (state.faceoffStrikes?.[input.team] ?? 0) + 1),
