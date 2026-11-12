@@ -59,6 +59,7 @@ type StoredState = GameState & {
   answers: Array<{ text: string; points: number; position: number }>
   teamIds?: Record<TeamId, number>
   playerIds?: Record<TeamId, number[]>
+  roundQuestions?: Array<{ roundIndex: number; questionId: number; prompt: string }>
 }
 const rooms = new Map<string, Room>()
 const app = express()
@@ -99,6 +100,7 @@ async function normalizedState(game: Game): Promise<StoredState> {
   const rounds = await database.query<any>("SELECT * FROM game_round_configs WHERE game_id = :gameId ORDER BY round_index", { replacements: { gameId: game.id }, type: QueryTypes.SELECT })
   const teams = await database.query<any>("SELECT * FROM game_team_states WHERE game_id = :gameId ORDER BY team_key", { replacements: { gameId: game.id }, type: QueryTypes.SELECT })
   const runtimeAnswers = await database.query<any>("SELECT * FROM game_runtime_answers WHERE game_id = :gameId ORDER BY answer_index", { replacements: { gameId: game.id }, type: QueryTypes.SELECT })
+  const roundQuestions = await database.query<any>("SELECT game_round_questions.round_index, game_round_questions.question_id, questions.prompt FROM game_round_questions JOIN questions ON questions.id = game_round_questions.question_id WHERE game_round_questions.game_id=:gameId ORDER BY game_round_questions.round_index", { replacements: { gameId: game.id }, type: QueryTypes.SELECT })
   const configuredTeams = await Team.findAll({ where: { gameId: game.id }, include: [{ model: Player, as: "players" }], order: [["color", "ASC"]] })
   const teamConfig = (["blue", "red"] as TeamId[]).map((key) => {
     const row = configuredTeams.find((team) => team.color === key)
@@ -115,6 +117,7 @@ async function normalizedState(game: Game): Promise<StoredState> {
     faceoffStrikes: { blue: teams.find((row) => row.team_key === "blue")?.faceoff_strikes ?? 0, red: teams.find((row) => row.team_key === "red")?.faceoff_strikes ?? 0 },
     faceoffStrikeTeam: runtime?.faceoff_strike_team ?? undefined, pot: runtime?.pot ?? 0, stealTeam: runtime?.steal_team ?? null,
     questionId: runtime?.question_id, questionPrompt: "", answerIds: runtimeAnswers.map((row) => row.answer_id), answers: runtimeAnswers.map((row) => ({ text: row.text, points: row.points, position: row.position })), teamIds: Object.fromEntries((configuredTeams as Team[]).map((team) => [team.color, team.id])) as Record<TeamId, number>, playerIds,
+    roundQuestions: roundQuestions.map((row) => ({ roundIndex: row.round_index, questionId: row.question_id, prompt: row.prompt })),
   }
   if (runtime?.faceoff_first_team || runtime?.faceoff_second_team || game.phase === "faceoff" || game.phase === "decision" || game.phase === "tiebreaker") state.faceoff = { firstTeam: runtime?.faceoff_first_team ?? undefined, firstIndex: runtime?.faceoff_first_index ?? undefined, secondTeam: runtime?.faceoff_second_team ?? undefined, secondIndex: runtime?.faceoff_second_index ?? undefined, activeTeam: game.activeTeam ?? undefined, bluePlayer: state.teams[0].players[state.turnIndex.blue], redPlayer: state.teams[1].players[state.turnIndex.red] }
   if (state.questionId) { const question = await Question.findByPk(state.questionId); state.questionPrompt = question?.prompt ?? "" }
@@ -308,6 +311,7 @@ app.post("/api/rooms", async (req, res) => {
     if (!selected?.answers?.length) throw new Error("questions_required")
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
+    state.roundQuestions = preparedQuestions.map((prepared, roundIndex) => ({ roundIndex, questionId: prepared.question.id, prompt: prepared.question.prompt }))
     state.answerIds = selected.answers.map((a) => a.id)
     state.answers = selected.answers.map((a) => ({
       text: a.text,
