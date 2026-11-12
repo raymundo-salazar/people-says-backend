@@ -1102,6 +1102,9 @@ async function applyAction(
       next.faceoff = undefined
       return persist(room, next)
     }
+    if (next.phase === "round_result") {
+      return persist(room, finishRound(next, state.control ?? team))
+    }
     if (next.phase === "turn") next.turnIndex = advancePlayer(next, team).turnIndex
     return persist(room, next)
   }
