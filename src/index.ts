@@ -348,7 +348,9 @@ async function persist(room: Room, state: Record<string, unknown>) {
   room.game.activeTeam =
     (["faceoff", "decision", "tiebreaker"].includes(room.game.phase)
       ? (faceoff?.activeTeam ?? faceoff?.firstTeam)
-      : (state.control as TeamId | null | undefined)) ?? null
+      : room.game.phase === "steal"
+        ? (state.stealTeam as TeamId | null | undefined)
+        : (state.control as TeamId | null | undefined)) ?? null
   const activePlayerIds = state.playerIds as Record<TeamId, number[]> | undefined
   const turnIndex = state.turnIndex as Record<TeamId, number> | undefined
   const activeTeam = room.game.activeTeam
