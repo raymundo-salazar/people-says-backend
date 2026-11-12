@@ -7,7 +7,6 @@ export interface GameAttributes {
   activeTeam: "blue" | "red" | null
   activePlayerId: number | null
   hostToken: string
-  state: Record<string, unknown>
   createdAt: Date
   updatedAt: Date
 }
@@ -19,5 +18,4 @@ export interface GameCreationAttributes {
   activeTeam?: "blue" | "red" | null
   activePlayerId?: number | null
   hostToken: string
-  state?: Record<string, unknown>
 }

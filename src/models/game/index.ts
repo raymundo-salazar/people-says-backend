@@ -9,7 +9,6 @@ export class Game extends Model<GameAttributes, GameCreationAttributes> implemen
   declare activeTeam: "blue" | "red" | null
   declare activePlayerId: number | null
   declare hostToken: string
-  declare state: Record<string, unknown>
   declare createdAt: Date
   declare updatedAt: Date
   public static associate(): void {}
@@ -30,7 +29,6 @@ export function initializeGame(sequelize: Sequelize) {
         unique: true,
         field: "host_token",
       },
-      state: { type: DataTypes.JSON, allowNull: false, defaultValue: {} },
       createdAt: { type: DataTypes.DATE, field: "created_at" },
       updatedAt: { type: DataTypes.DATE, field: "updated_at" },
     },
