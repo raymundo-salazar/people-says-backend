@@ -998,8 +998,8 @@ async function applyAction(
     if (!validCombination) {
       throw new Error(
         roles.length === 3
-          ? "Para iniciar necesitas 1, 2 o 4 dispositivos. Con 3 dispositivos no se puede comenzar."
-          : "La sala debe tener Presentador; con 2 dispositivos agrega Pantalla pública, o completa los 4 roles."
+          ? "Para iniciar usa solo Presentador; Presentador y Pantalla pública; o completa los roles de Presentador, Pantalla pública, Pulsador azul y Pulsador rojo."
+          : "La sala debe tener Presentador. Puedes jugar solo con él, agregar Pantalla pública o completar los roles de ambos pulsadores."
       )
     }
     room.buzzerWinner = null
