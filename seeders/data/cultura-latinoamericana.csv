@@ -1,0 +1,1001 @@
+﻿pregunta_id,categoria,categoria_slug,grupo_tema,pregunta,cantidad_respuestas,posicion,respuesta,votos_respuesta_simulados,participantes_pregunta_simulados,puntos,origen_votos,estado_contenido
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,1,asado,614,2576,22,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,2,empanadas,560,2576,21,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,3,milanesa,309,2576,12,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,4,choripán,261,2576,10,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,5,locro,189,2576,8,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,6,provoleta,181,2576,7,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,7,humita,164,2576,7,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,8,alfajor,128,2576,5,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,9,matambre,124,2576,5,simulado,borrador_editorial
+latam-001,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un platillo que asocies con Argentina,10,10,facturas,46,2576,3,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,1,bandeja paisa,1217,5281,22,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,2,arepa,741,5281,14,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,3,ajiaco,732,5281,13,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,4,sancocho,691,5281,13,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,5,empanada,480,5281,9,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,6,lechona,457,5281,9,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,7,tamal,331,5281,7,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,8,buñuelo,222,5281,5,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,9,changua,207,5281,4,simulado,borrador_editorial
+latam-002,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una comida típica de Colombia,10,10,patacón,203,5281,4,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,1,carnaval,433,1907,21,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,2,fútbol,271,1907,14,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,3,samba,251,1907,13,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,4,playas,206,1907,11,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,5,Cristo Redentor,173,1907,9,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,6,capoeira,150,1907,8,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,7,Amazonas,147,1907,8,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,8,feijoada,107,1907,6,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,9,Río de Janeiro,87,1907,5,simulado,borrador_editorial
+latam-003,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que la gente asocia con Brasil,10,10,guaraná,82,1907,5,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,1,arepa,257,1673,15,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,2,tortilla,247,1673,14,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,3,tamal,237,1673,14,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,4,humita,213,1673,12,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,5,elote,187,1673,11,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,6,pupusa,170,1673,10,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,7,atol,149,1673,9,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,8,mazamorra,83,1673,6,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,9,cachapa,72,1673,5,simulado,borrador_editorial
+latam-004,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un alimento preparado con maíz en Latinoamérica,10,10,pastel de choclo,58,1673,4,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,1,mate,1347,4539,28,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,2,chicha,851,4539,18,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,3,tereré,730,4539,15,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,4,atol,398,4539,9,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,5,horchata,251,4539,6,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,6,pisco sour,238,4539,6,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,7,aguapanela,209,4539,5,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,8,chicha morada,193,4539,5,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,9,champús,171,4539,4,simulado,borrador_editorial
+latam-005,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una bebida tradicional de Latinoamérica,10,10,guaraná,151,4539,4,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,1,Colombia,273,1168,22,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,2,Brasil,174,1168,14,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,3,Costa Rica,159,1168,13,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,4,Guatemala,125,1168,11,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,5,Honduras,120,1168,10,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,6,Perú,98,1168,9,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,7,México,72,1168,7,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,8,Nicaragua,64,1168,6,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,9,Ecuador,45,1168,4,simulado,borrador_editorial
+latam-006,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un país latinoamericano reconocido por su café,10,10,El Salvador,38,1168,4,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,1,frutas,854,2833,28,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,2,verduras,403,2833,14,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,3,artesanías,284,2833,10,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,4,especias,265,2833,9,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,5,ropa,264,2833,9,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,6,flores,207,2833,8,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,7,comida preparada,180,2833,7,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,8,hierbas,157,2833,6,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,9,pan,140,2833,5,simulado,borrador_editorial
+latam-007,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona algo que encuentras en un mercado tradicional,10,10,dulces,79,2833,4,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,1,mango,379,1539,23,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,2,piña,228,1539,14,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,3,papaya,189,1539,12,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,4,guayaba,145,1539,10,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,5,maracuyá,127,1539,8,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,6,coco,120,1539,8,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,7,guanábana,99,1539,7,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,8,plátano,84,1539,6,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,9,pitahaya,84,1539,6,simulado,borrador_editorial
+latam-008,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una fruta tropical popular en Latinoamérica,10,10,carambola,84,1539,6,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,1,maíz,652,2728,22,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,2,arroz,476,2728,17,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,3,frijoles,307,2728,11,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,4,tomate,248,2728,9,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,5,cebolla,229,2728,9,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,6,ajo,211,2728,8,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,7,cilantro,210,2728,8,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,8,ají,175,2728,7,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,9,plátano,132,2728,5,simulado,borrador_editorial
+latam-009,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona un ingrediente común en la cocina latinoamericana,10,10,yuca,88,2728,4,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,1,patacones,1072,4085,25,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,2,maduros fritos,479,4085,12,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,3,tostones,474,4085,11,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,4,plátano asado,427,4085,10,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,5,bolón,403,4085,10,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,6,chifles,360,4085,9,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,7,mofongo,315,4085,8,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,8,plátano hervido,251,4085,7,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,9,pastelón,190,4085,5,simulado,borrador_editorial
+latam-010,Cultura latinoamericana,cultura-latinoamericana,Gastronomía,Menciona una forma de preparar el plátano en Latinoamérica,10,10,puré,114,4085,3,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,1,Buenos Aires,759,3149,23,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,2,Río de Janeiro,575,3149,17,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,3,Ciudad de México,354,3149,11,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,4,Lima,277,3149,9,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,5,Bogotá,255,3149,8,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,6,Santiago,230,3149,8,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,7,Cartagena,216,3149,7,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,8,Medellín,188,3149,6,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,9,La Habana,163,3149,6,simulado,borrador_editorial
+latam-011,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una ciudad latinoamericana que te gustaría visitar,10,10,Cusco,132,3149,5,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,1,Machu Picchu,918,4036,21,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,2,Cristo Redentor,826,4036,19,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,3,Chichén Itzá,570,4036,14,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,4,Iguazú,388,4036,10,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,5,Galápagos,341,4036,8,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,6,Patagonia,305,4036,8,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,7,Salar de Uyuni,272,4036,7,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,8,Cartagena amurallada,163,4036,5,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,9,Teotihuacán,136,4036,4,simulado,borrador_editorial
+latam-012,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una atracción turística conocida de Latinoamérica,10,10,Perito Moreno,117,4036,4,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,1,selva,1080,4093,25,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,2,playa,626,4093,15,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,3,montaña,603,4093,14,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,4,desierto,521,4093,12,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,5,volcán,268,4093,7,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,6,cascada,264,4093,7,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,7,lago,200,4093,5,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,8,glaciar,186,4093,5,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,9,sabana,177,4093,5,simulado,borrador_editorial
+latam-013,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un paisaje natural que se encuentra en Latinoamérica,10,10,manglar,168,4093,5,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,1,Brasil,323,1550,20,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,2,México,253,1550,16,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,3,Colombia,209,1550,13,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,4,República Dominicana,189,1550,12,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,5,Cuba,115,1550,8,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,6,Costa Rica,106,1550,7,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,7,Panamá,105,1550,7,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,8,Venezuela,104,1550,7,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,9,Ecuador,74,1550,5,simulado,borrador_editorial
+latam-014,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un país latinoamericano con playas famosas,10,10,Uruguay,72,1550,5,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,1,senderismo,501,1866,25,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,2,visitar ruinas,271,1866,14,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,3,fotografía,223,1866,12,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,4,montañismo,176,1866,9,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,5,recorrer mercados,172,1866,9,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,6,probar comida,144,1866,8,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,7,visitar lagunas,122,1866,7,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,8,viajar en tren,102,1866,6,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,9,acampar,98,1866,6,simulado,borrador_editorial
+latam-015,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona una actividad turística popular en los Andes,10,10,observar cóndores,57,1866,4,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,1,repelente,622,3803,16,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,2,botas,587,3803,15,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,3,impermeable,505,3803,13,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,4,agua,427,3803,11,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,5,linterna,417,3803,11,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,6,protector solar,332,3803,9,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,7,sombrero,329,3803,9,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,8,botiquín,205,3803,6,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,9,mochila,199,3803,5,simulado,borrador_editorial
+latam-016,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que llevarías a la selva amazónica,10,10,ropa ligera,180,3803,5,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,1,llama,1386,4831,27,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,2,alpaca,811,4831,16,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,3,jaguar,438,4831,9,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,4,cóndor,419,4831,9,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,5,capibara,396,4831,8,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,6,anaconda,366,4831,8,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,7,tapir,362,4831,8,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,8,oso de anteojos,231,4831,5,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,9,perezoso,222,4831,5,simulado,borrador_editorial
+latam-017,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal emblemático de Sudamérica,10,10,guacamaya,200,4831,5,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,1,tortuga gigante,1034,2896,33,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,2,iguana marina,358,2896,12,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,3,piquero de patas azules,270,2896,10,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,4,lobo marino,234,2896,8,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,5,pinzón,230,2896,8,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,6,pingüino,181,2896,7,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,7,fragata,165,2896,6,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,8,pelícano,161,2896,6,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,9,tiburón,135,2896,5,simulado,borrador_editorial
+latam-018,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un animal que se puede observar en Galápagos,10,10,delfín,128,2896,5,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,1,Popocatépetl,655,2583,24,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,2,Arenal,433,2583,16,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,3,Cotopaxi,305,2583,12,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,4,Villarrica,244,2583,9,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,5,Fuego,235,2583,9,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,6,Nevado del Ruiz,229,2583,9,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,7,Osorno,145,2583,6,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,8,Poás,143,2583,6,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,9,Tungurahua,114,2583,5,simulado,borrador_editorial
+latam-019,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona un volcán conocido de Latinoamérica,10,10,Pacaya,80,2583,4,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,1,glaciares,1206,4646,24,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,2,montañas,777,4646,16,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,3,frío,509,4646,11,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,4,pingüinos,487,4646,11,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,5,viento,375,4646,8,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,6,lagos,357,4646,8,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,7,senderismo,328,4646,7,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,8,guanacos,302,4646,7,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,9,nieve,160,4646,4,simulado,borrador_editorial
+latam-020,Cultura latinoamericana,cultura-latinoamericana,Turismo y geografía,Menciona algo que asocies con la Patagonia,10,10,parques nacionales,145,4646,4,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,1,salsa,798,3828,20,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,2,cumbia,699,3828,17,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,3,reguetón,658,3828,17,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,4,bachata,523,3828,13,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,5,merengue,388,3828,10,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,6,samba,201,3828,6,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,7,tango,175,3828,5,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,8,vallenato,162,3828,5,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,9,son cubano,125,3828,4,simulado,borrador_editorial
+latam-021,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un ritmo musical originario o popular de Latinoamérica,10,10,forró,99,3828,3,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,1,quena,925,3586,24,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,2,charango,672,3586,18,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,3,zampoña,426,3586,12,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,4,bombo,311,3586,9,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,5,guitarra,276,3586,8,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,6,arpa,275,3586,8,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,7,violín,204,3586,6,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,8,ronroco,199,3586,6,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,9,flauta,162,3586,5,simulado,borrador_editorial
+latam-022,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento frecuente en la música andina,10,10,mandolina,136,3586,4,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,1,salsa,698,2665,24,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,2,tango,435,2665,16,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,3,cumbia,326,2665,12,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,4,samba,273,2665,10,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,5,merengue,255,2665,10,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,6,bachata,226,2665,9,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,7,cueca,160,2665,6,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,8,marinera,118,2665,5,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,9,joropo,97,2665,4,simulado,borrador_editorial
+latam-023,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un baile tradicional o popular de Latinoamérica,10,10,forró,77,2665,4,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,1,Shakira,1095,3862,27,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,2,Bad Bunny,633,3862,16,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,3,Juanes,608,3862,15,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,4,Karol G,319,3862,8,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,5,Ricky Martin,317,3862,8,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,6,Celia Cruz,247,3862,7,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,7,Soda Stereo,218,3862,6,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,8,Luis Miguel,208,3862,6,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,9,J Balvin,125,3862,4,simulado,borrador_editorial
+latam-024,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un cantante o grupo latinoamericano conocido,10,10,Maná,92,3862,3,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,1,fiesta,533,3190,16,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,2,salón de baile,486,3190,15,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,3,discoteca,463,3190,14,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,4,academia,317,3190,10,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,5,bar,299,3190,9,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,6,boda,281,3190,9,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,7,festival,227,3190,7,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,8,plaza,205,3190,7,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,9,reunión familiar,199,3190,7,simulado,borrador_editorial
+latam-025,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un lugar donde la gente baila salsa,10,10,concierto,180,3190,6,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,1,disfraces,263,1255,20,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,2,carrozas,210,1255,16,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,3,música,203,1255,16,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,4,baile,122,1255,10,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,5,máscaras,97,1255,8,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,6,plumas,87,1255,7,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,7,comparsa,87,1255,7,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,8,confeti,69,1255,6,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,9,tambores,68,1255,6,simulado,borrador_editorial
+latam-026,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se ve en un carnaval latinoamericano,10,10,multitudes,49,1255,4,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,1,salsa,953,5234,17,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,2,cumbia,869,5234,16,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,3,reguetón,678,5234,13,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,4,merengue,600,5234,11,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,5,bachata,543,5234,10,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,6,vallenato,439,5234,9,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,7,samba,435,5234,9,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,8,pop latino,308,5234,6,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,9,tango,292,5234,6,simulado,borrador_editorial
+latam-027,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un género que pondrías en una fiesta latina,10,10,son,117,5234,3,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,1,acordeón,1033,4221,23,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,2,güiro,863,4221,19,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,3,tambor,466,4221,11,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,4,guitarra,399,4221,10,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,5,bajo,385,4221,9,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,6,teclado,294,4221,7,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,7,congas,279,4221,7,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,8,flauta,179,4221,5,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,9,maracas,178,4221,5,simulado,borrador_editorial
+latam-028,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un instrumento que acompaña la cumbia,10,10,clarinete,145,4221,4,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,1,Argentina,646,2207,27,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,2,Uruguay,369,2207,16,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,3,Chile,239,2207,11,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,4,Brasil,195,2207,9,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,5,Paraguay,188,2207,9,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,6,Perú,140,2207,7,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,7,Colombia,115,2207,6,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,8,México,113,2207,5,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,9,Bolivia,104,2207,5,simulado,borrador_editorial
+latam-029,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona un país que asocies con el tango,10,10,Ecuador,98,2207,5,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,1,bailar,945,4359,21,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,2,cantar,745,4359,16,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,3,aplaudir,451,4359,10,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,4,grabar videos,450,4359,10,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,5,comer,423,4359,10,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,6,comprar recuerdos,371,4359,9,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,7,tomar fotos,321,4359,8,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,8,ver artistas,313,4359,7,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,9,usar disfraces,199,4359,5,simulado,borrador_editorial
+latam-030,Cultura latinoamericana,cultura-latinoamericana,Música y baile,Menciona algo que se hace en un festival de música,10,10,hacer fila,141,4359,4,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,1,Día de Muertos,614,3576,16,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,2,carnaval,564,3576,15,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,3,Inti Raymi,482,3576,13,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,4,Fiesta de la Candelaria,420,3576,12,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,5,Feria de las Flores,416,3576,12,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,6,Semana Santa,309,3576,9,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,7,Fiestas Patrias,252,3576,7,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,8,San Juan,215,3576,6,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,9,posadas,199,3576,6,simulado,borrador_editorial
+latam-031,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una celebración tradicional de Latinoamérica,10,10,vendimia,105,3576,4,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,1,vestido,1135,5170,21,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,2,pastel,672,5170,13,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,3,música,631,5170,12,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,4,invitaciones,590,5170,11,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,5,salón,491,5170,10,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,6,comida,410,5170,8,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,7,fotografías,405,5170,8,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,8,baile,366,5170,7,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,9,decoración,267,5170,6,simulado,borrador_editorial
+latam-032,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se prepara para una fiesta de quince años,10,10,recuerdos,203,5170,4,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,1,cenar en familia,1004,3560,26,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,2,intercambiar regalos,538,3560,15,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,3,poner árbol,442,3560,12,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,4,asistir a misa,351,3560,10,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,5,hacer posadas,274,3560,8,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,6,preparar tamales,255,3560,8,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,7,cantar villancicos,239,3560,7,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,8,poner nacimiento,175,3560,5,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,9,encender luces,163,3560,5,simulado,borrador_editorial
+latam-033,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se acostumbra hacer en Navidad,10,10,visitar familiares,119,3560,4,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,1,velas,483,3078,15,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,2,flores,465,3078,15,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,3,imágenes religiosas,369,3078,12,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,4,música,361,3078,11,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,5,personas caminando,350,3078,11,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,6,estandartes,346,3078,11,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,7,incienso,266,3078,9,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,8,oraciones,216,3078,7,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,9,vestimentas tradicionales,124,3078,5,simulado,borrador_editorial
+latam-034,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se ve en una procesión religiosa,10,10,campanas,98,3078,4,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,1,comer uvas,458,1781,24,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,2,usar ropa interior de colores,278,1781,15,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,3,brindar,245,1781,13,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,4,abrazar,236,1781,13,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,5,salir con maletas,122,1781,7,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,6,quemar muñecos,110,1781,7,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,7,ver fuegos artificiales,100,1781,6,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,8,cenar,92,1781,6,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,9,hacer propósitos,86,1781,5,simulado,borrador_editorial
+latam-035,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una tradición de Año Nuevo latinoamericano,10,10,contar regresivamente,54,1781,4,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,1,juegos mecánicos,618,4249,14,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,2,puestos de comida,603,4249,14,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,3,música,562,4249,13,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,4,artesanías,424,4249,10,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,5,fuegos artificiales,420,4249,10,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,6,procesión,406,4249,10,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,7,dulces,389,4249,9,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,8,baile,368,4249,9,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,9,rifas,242,4249,6,simulado,borrador_editorial
+latam-036,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que encuentras en una feria patronal,10,10,decoraciones,217,4249,5,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,1,cerámica,663,4187,15,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,2,tejidos,538,4187,13,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,3,cestería,488,4187,11,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,4,bordados,435,4187,10,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,5,sombreros,414,4187,10,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,6,máscaras,396,4187,10,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,7,hamacas,381,4187,9,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,8,joyería,365,4187,9,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,9,tapices,310,4187,8,simulado,borrador_editorial
+latam-037,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una artesanía tradicional latinoamericana,10,10,tallas de madera,197,4187,5,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,1,barro,802,4996,15,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,2,madera,678,4996,13,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,3,lana,673,4996,13,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,4,algodón,550,4996,11,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,5,palma,526,4996,11,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,6,cuero,444,4996,9,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,7,plata,360,4996,8,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,8,paja,343,4996,7,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,9,piedra,327,4996,7,simulado,borrador_editorial
+latam-038,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona un material usado en artesanías latinoamericanas,10,10,semillas,293,4996,6,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,1,pulseras,1203,4879,23,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,2,bolsos,664,4879,13,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,3,sombreros,577,4879,12,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,4,cerámica,527,4879,11,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,5,collares,460,4879,10,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,6,ropa bordada,429,4879,9,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,7,canastas,422,4879,9,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,8,figuras de madera,225,4879,5,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,9,mantas,188,4879,4,simulado,borrador_editorial
+latam-039,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona algo que se vende en una feria artesanal,10,10,instrumentos,184,4879,4,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,1,poncho,1136,4754,23,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,2,huipil,800,4754,16,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,3,sombrero vueltiao,555,4754,12,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,4,pollera,552,4754,11,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,5,guayabera,481,4754,10,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,6,rebozo,288,4754,6,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,7,alpargatas,276,4754,6,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,8,ruana,269,4754,6,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,9,chullo,211,4754,5,simulado,borrador_editorial
+latam-040,Cultura latinoamericana,cultura-latinoamericana,Tradiciones y fiestas,Menciona una prenda tradicional de algún país latinoamericano,10,10,traje de charro,186,4754,5,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,1,parce,551,2629,20,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,2,che,375,2629,14,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,3,compa,356,2629,13,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,4,cuate,274,2629,10,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,5,pana,272,2629,10,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,6,broder,258,2629,10,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,7,causa,204,2629,8,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,8,mano,135,2629,6,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,9,chamo,125,2629,5,simulado,borrador_editorial
+latam-041,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para llamar a un amigo en Latinoamérica,10,10,weón,79,2629,4,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,1,hola,373,2203,16,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,2,qué tal,361,2203,16,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,3,qué onda,279,2203,12,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,4,buenas,253,2203,11,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,5,cómo estás,239,2203,11,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,6,qué más,187,2203,9,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,7,qué hubo,160,2203,8,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,8,qué hacés,135,2203,7,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,9,todo bien,110,2203,5,simulado,borrador_editorial
+latam-042,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma de saludar en Latinoamérica,10,10,qué pasa,106,2203,5,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,1,chévere,929,3265,27,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,2,bacán,544,3265,16,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,3,genial,382,3265,11,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,4,padre,277,3265,9,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,5,copado,261,3265,8,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,6,chido,252,3265,8,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,7,de lujo,231,3265,7,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,8,piola,145,3265,5,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,9,tuani,144,3265,5,simulado,borrador_editorial
+latam-043,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una expresión para decir que algo está bien,10,10,excelente,100,3265,4,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,1,popote,476,2195,21,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,2,autobús,374,2195,16,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,3,palomitas,312,2195,14,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,4,aguacate,268,2195,12,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,5,plátano,201,2195,9,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,6,computadora,194,2195,9,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,7,camiseta,144,2195,7,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,8,bolígrafo,106,2195,5,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,9,frijoles,62,2195,4,simulado,borrador_editorial
+latam-044,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que cambia de nombre entre países latinoamericanos,10,10,fresa,58,2195,3,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,1,camión,330,1335,23,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,2,bus,295,1335,21,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,3,colectivo,140,1335,10,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,4,micro,127,1335,10,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,5,guagua,113,1335,9,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,6,ómnibus,109,1335,8,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,7,combi,88,1335,7,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,8,bondi,49,1335,4,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,9,buseta,46,1335,4,simulado,borrador_editorial
+latam-045,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse al autobús,10,10,autobús,38,1335,4,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,1,palomitas,186,923,19,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,2,pochoclo,168,923,17,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,3,cotufas,142,923,15,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,4,canguil,80,923,9,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,5,crispetas,75,923,8,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,6,poporopos,71,923,8,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,7,cabritas,58,923,7,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,8,pororó,58,923,7,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,9,popcorn,43,923,5,simulado,borrador_editorial
+latam-046,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para las palomitas de maíz,10,10,rosetas,42,923,5,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,1,adiós,1291,5165,24,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,2,chao,762,5165,14,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,3,hasta luego,649,5165,12,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,4,nos vemos,643,5165,12,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,5,cuídate,529,5165,10,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,6,hasta mañana,422,5165,8,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,7,bye,296,5165,6,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,8,que te vaya bien,277,5165,6,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,9,saludos,154,5165,4,simulado,borrador_editorial
+latam-047,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona algo que se suele decir al despedirse,10,10,hasta pronto,142,5165,4,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,1,chico,477,2268,20,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,2,chamaco,430,2268,18,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,3,pelado,303,2268,13,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,4,pibe,250,2268,11,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,5,chamo,224,2268,10,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,6,guagua,151,2268,7,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,7,cipote,147,2268,7,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,8,chiquillo,145,2268,7,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,9,muchacho,77,2268,4,simulado,borrador_editorial
+latam-048,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una palabra para referirse a un niño,10,10,niño,64,2268,3,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,1,plata,1558,4455,32,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,2,lana,687,4455,15,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,3,billete,357,4455,8,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,4,guita,338,4455,8,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,5,lucas,304,4455,7,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,6,feria,301,4455,7,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,7,varo,277,4455,7,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,8,efectivo,241,4455,6,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,9,pesos,197,4455,5,simulado,borrador_editorial
+latam-049,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona una forma informal de decir dinero,10,10,monedas,195,4455,5,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,1,fútbol,1042,4701,21,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,2,béisbol,955,4701,19,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,3,baloncesto,641,4701,13,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,4,voleibol,512,4701,11,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,5,boxeo,397,4701,9,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,6,automovilismo,273,4701,6,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,7,tenis,259,4701,6,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,8,ciclismo,253,4701,6,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,9,surf,228,4701,5,simulado,borrador_editorial
+latam-050,Cultura latinoamericana,cultura-latinoamericana,Lenguaje y expresiones,Menciona un deporte muy seguido en Latinoamérica,10,10,fútbol sala,141,4701,4,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,1,Brasil,717,2644,25,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,2,Argentina,433,2644,16,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,3,Uruguay,372,2644,14,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,4,México,298,2644,11,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,5,Colombia,173,2644,7,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,6,Chile,158,2644,6,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,7,Perú,150,2644,6,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,8,Ecuador,136,2644,6,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,9,Paraguay,118,2644,5,simulado,borrador_editorial
+latam-051,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano con tradición futbolística,10,10,Costa Rica,89,2644,4,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,1,Lionel Messi,841,4809,17,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,2,Pelé,784,4809,16,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,3,Diego Maradona,748,4809,15,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,4,Neymar,457,4809,9,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,5,Ronaldinho,432,4809,9,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,6,Luis Suárez,421,4809,9,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,7,Alexis Sánchez,350,4809,7,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,8,James Rodríguez,307,4809,7,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,9,Ronaldo Nazário,266,4809,6,simulado,borrador_editorial
+latam-052,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un futbolista latinoamericano famoso,10,10,Hugo Sánchez,203,4809,5,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,1,banderas,281,1519,18,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,2,camisetas,226,1519,14,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,3,tambores,197,1519,13,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,4,pancartas,165,1519,11,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,5,bufandas,129,1519,9,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,6,aficionados,126,1519,8,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,7,confeti,120,1519,8,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,8,globos,112,1519,8,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,9,carteles,104,1519,7,simulado,borrador_editorial
+latam-053,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que se ve en las gradas de un partido,10,10,vuvuzelas,59,1519,4,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,1,béisbol,1422,5004,27,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,2,baloncesto,770,5004,15,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,3,atletismo,668,5004,13,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,4,boxeo,508,5004,10,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,5,voleibol,491,5004,10,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,6,críquet,306,5004,7,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,7,fútbol,301,5004,6,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,8,natación,221,5004,5,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,9,softbol,178,5004,4,simulado,borrador_editorial
+latam-054,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un deporte popular en el Caribe,10,10,tenis,139,5004,3,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,1,gritar,730,4466,16,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,2,saltar,652,4466,14,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,3,abrazarse,647,4466,14,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,4,aplaudir,562,4466,12,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,5,cantar,476,4466,11,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,6,agitar banderas,431,4466,10,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,7,chocar manos,359,4466,8,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,8,bailar,292,4466,7,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,9,tocar tambores,176,4466,4,simulado,borrador_editorial
+latam-055,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la afición al celebrar un gol,10,10,grabar videos,141,4466,4,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,1,boleto,1206,4766,24,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,2,camiseta,1059,4766,21,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,3,gorra,605,4766,13,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,4,bandera,575,4766,12,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,5,agua,284,4766,6,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,6,celular,255,4766,6,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,7,bufanda,233,4766,5,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,8,dinero,208,4766,5,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,9,protector solar,176,4766,4,simulado,borrador_editorial
+latam-056,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un objeto que llevarías a un estadio,10,10,impermeable,165,4766,4,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,1,voleibol,665,3039,21,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,2,surf,456,3039,14,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,3,natación,350,3039,11,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,4,fútbol,345,3039,11,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,5,caminar,261,3039,9,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,6,correr,235,3039,8,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,7,buceo,235,3039,8,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,8,remo,211,3039,7,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,9,esnórquel,195,3039,7,simulado,borrador_editorial
+latam-057,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona una actividad física practicada en playas,10,10,entrenamiento,86,3039,4,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,1,Colombia,1344,4989,25,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,2,Ecuador,784,4989,15,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,3,Costa Rica,568,4989,11,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,4,México,479,4989,10,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,5,Argentina,424,4989,9,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,6,Chile,400,4989,8,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,7,Brasil,297,4989,7,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,8,Venezuela,239,4989,5,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,9,Perú,233,4989,5,simulado,borrador_editorial
+latam-058,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un país latinoamericano asociado al ciclismo,10,10,Uruguay,221,4989,5,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,1,ponerse camiseta,498,1956,24,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,2,reunirse con amigos,391,1956,19,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,3,comprar botanas,223,1956,11,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,4,preparar comida,169,1956,9,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,5,hacer pronósticos,165,1956,9,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,6,decorar casa,158,1956,8,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,7,encender televisión,128,1956,7,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,8,revisar alineaciones,103,1956,6,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,9,comprar bebidas,69,1956,4,simulado,borrador_editorial
+latam-059,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona algo que hace la gente antes de ver un partido importante,10,10,mandar mensajes,52,1956,3,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,1,Gabriel García Márquez,975,4821,19,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,2,Jorge Luis Borges,789,4821,16,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,3,Isabel Allende,637,4821,13,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,4,Mario Vargas Llosa,559,4821,11,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,5,Julio Cortázar,497,4821,10,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,6,Pablo Neruda,360,4821,8,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,7,Juan Rulfo,315,4821,7,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,8,Laura Esquivel,297,4821,7,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,9,Clarice Lispector,225,4821,5,simulado,borrador_editorial
+latam-060,Cultura latinoamericana,cultura-latinoamericana,Deportes,Menciona un escritor latinoamericano reconocido,10,10,Octavio Paz,167,4821,4,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,1,Simón Bolívar,780,4232,18,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,2,José de San Martín,615,4232,14,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,3,Benito Juárez,593,4232,14,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,4,José Martí,538,4232,12,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,5,Eva Perón,446,4232,11,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,6,Emiliano Zapata,442,4232,10,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,7,Bernardo O'Higgins,433,4232,10,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,8,Túpac Amaru II,150,4232,4,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,9,Francisco de Miranda,144,4232,4,simulado,borrador_editorial
+latam-061,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un personaje histórico latinoamericano,10,10,Manuela Sáenz,91,4232,3,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,1,Machu Picchu,197,1075,18,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,2,Chichén Itzá,180,1075,16,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,3,Teotihuacán,157,1075,14,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,4,Tikal,147,1075,13,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,5,Palenque,105,1075,10,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,6,Copán,95,1075,9,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,7,Chan Chan,64,1075,6,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,8,Tiwanaku,51,1075,5,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,9,Monte Albán,46,1075,5,simulado,borrador_editorial
+latam-062,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un sitio arqueológico famoso de Latinoamérica,10,10,Caral,33,1075,4,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,1,maya,674,3960,16,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,2,inca,602,3960,15,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,3,azteca,506,3960,13,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,4,olmeca,506,3960,12,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,5,zapoteca,489,3960,12,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,6,moche,312,3960,8,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,7,tiwanaku,297,3960,8,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,8,tolteca,296,3960,8,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,9,chimú,153,3960,4,simulado,borrador_editorial
+latam-063,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una civilización antigua de América Latina,10,10,mixteca,125,3960,4,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,1,cerámica,154,868,17,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,2,documentos antiguos,152,868,17,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,3,pinturas,108,868,12,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,4,esculturas,98,868,11,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,5,armas antiguas,76,868,9,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,6,mapas,74,868,9,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,7,fotografías,74,868,9,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,8,vestimenta,59,868,7,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,9,monedas,51,868,6,simulado,borrador_editorial
+latam-064,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en un museo de historia,10,10,herramientas,22,868,3,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,1,Simón Bolívar,463,1776,24,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,2,José de San Martín,289,1776,16,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,3,Miguel Hidalgo,284,1776,15,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,4,José María Morelos,151,1776,9,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,5,Bernardo O'Higgins,141,1776,8,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,6,Antonio José de Sucre,116,1776,7,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,7,Francisco de Miranda,95,1776,6,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,8,José Martí,94,1776,6,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,9,Manuela Sáenz,89,1776,5,simulado,borrador_editorial
+latam-065,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una figura de la independencia latinoamericana,10,10,Mariano Moreno,54,1776,4,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,1,quechua,428,2082,19,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,2,náhuatl,410,2082,19,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,3,guaraní,257,2082,12,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,4,aimara,233,2082,11,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,5,maya yucateco,194,2082,9,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,6,mapudungun,182,2082,9,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,7,zapoteco,139,2082,7,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,8,mixteco,93,2082,5,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,9,kichwa,85,2082,5,simulado,borrador_editorial
+latam-066,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona una lengua indígena hablada en Latinoamérica,10,10,wayuunaiki,61,2082,4,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,1,sol,1042,4938,20,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,2,estrella,750,4938,15,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,3,escudo,575,4938,11,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,4,águila,481,4938,10,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,5,franjas,456,4938,9,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,6,triángulo,367,4938,8,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,7,círculo,353,4938,7,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,8,montañas,319,4938,7,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,9,árbol,303,4938,7,simulado,borrador_editorial
+latam-067,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un símbolo que aparece en banderas latinoamericanas,10,10,corona,292,4938,6,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,1,México,353,1833,18,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,2,Perú,301,1833,16,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,3,Guatemala,281,1833,15,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,4,Honduras,230,1833,12,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,5,Bolivia,195,1833,11,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,6,Ecuador,148,1833,8,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,7,Belice,125,1833,7,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,8,El Salvador,90,1833,5,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,9,Colombia,59,1833,4,simulado,borrador_editorial
+latam-068,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona un país latinoamericano con ruinas prehispánicas,10,10,Chile,51,1833,4,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,1,leer,341,1404,23,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,2,estudiar,268,1404,18,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,3,investigar,181,1404,13,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,4,pedir libros,148,1404,11,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,5,usar computadora,131,1404,9,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,6,hacer tareas,82,1404,6,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,7,consultar periódicos,79,1404,6,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,8,asistir a talleres,74,1404,6,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,9,tomar apuntes,64,1404,5,simulado,borrador_editorial
+latam-069,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que se hace en una biblioteca pública,10,10,buscar información,36,1404,3,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,1,iglesia,1146,4595,23,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,2,fuente,787,4595,16,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,3,bancas,610,4595,13,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,4,árboles,510,4595,11,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,5,monumento,394,4595,9,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,6,vendedores,287,4595,7,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,7,palomas,281,4595,7,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,8,quiosco,265,4595,6,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,9,bandera,171,4595,4,simulado,borrador_editorial
+latam-070,Cultura latinoamericana,cultura-latinoamericana,Historia y patrimonio,Menciona algo que encuentras en una plaza principal,10,10,jardines,144,4595,4,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,1,autobús,678,2650,24,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,2,metro,617,2650,22,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,3,taxi,329,2650,12,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,4,mototaxi,199,2650,8,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,5,colectivo,170,2650,7,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,6,bicicleta,167,2650,7,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,7,tranvía,165,2650,6,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,8,teleférico,127,2650,5,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,9,combi,108,2650,5,simulado,borrador_editorial
+latam-071,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un transporte frecuente en ciudades latinoamericanas,10,10,lancha,90,2650,4,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,1,tráfico,498,2389,20,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,2,retrasos,371,2389,15,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,3,aglomeraciones,283,2389,12,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,4,contaminación,266,2389,11,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,5,tarifas altas,214,2389,9,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,6,inseguridad,194,2389,8,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,7,fallas mecánicas,192,2389,8,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,8,falta de rutas,191,2389,8,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,9,paradas saturadas,106,2389,5,simulado,borrador_editorial
+latam-072,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un problema común del transporte urbano,10,10,baches,74,2389,4,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,1,pan,401,1380,27,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,2,leche,252,1380,18,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,3,huevos,149,1380,11,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,4,agua,114,1380,8,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,5,refresco,111,1380,8,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,6,arroz,109,1380,8,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,7,aceite,78,1380,6,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,8,dulces,75,1380,6,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,9,jabón,46,1380,4,simulado,borrador_editorial
+latam-073,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se compra en una tienda de barrio,10,10,papel higiénico,45,1380,4,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,1,fruta,915,3652,24,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,2,comida,552,3652,15,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,3,agua,399,3652,11,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,4,dulces,367,3652,10,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,5,ropa,305,3652,8,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,6,flores,297,3652,8,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,7,artesanías,264,3652,7,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,8,periódicos,249,3652,7,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,9,juguetes,192,3652,6,simulado,borrador_editorial
+latam-074,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se vende en la calle,10,10,helados,112,3652,4,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,1,pregones,620,2047,28,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,2,música,306,2047,14,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,3,regateo,220,2047,11,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,4,saludos,216,2047,11,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,5,risas,193,2047,10,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,6,precios,143,2047,7,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,7,conversaciones,123,2047,6,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,8,claxon,85,2047,5,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,9,anuncios,71,2047,4,simulado,borrador_editorial
+latam-075,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se escucha en un mercado callejero,10,10,pasos,70,2047,4,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,1,casa de abuelos,1453,5358,25,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,2,parque,835,5358,15,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,3,restaurante,730,5358,13,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,4,iglesia,660,5358,12,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,5,plaza,517,5358,10,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,6,playa,400,5358,8,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,7,casa de familiares,299,5358,6,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,8,mercado,164,5358,4,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,9,centro comercial,153,5358,4,simulado,borrador_editorial
+latam-076,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona un lugar donde se reúne la familia un domingo,10,10,campo,147,5358,3,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,1,arroz,261,1456,17,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,2,pollo,226,1456,15,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,3,sopa,199,1456,13,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,4,ensalada,157,1456,11,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,5,carne,137,1456,9,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,6,frijoles,125,1456,9,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,7,papas,122,1456,9,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,8,postre,100,1456,7,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,9,agua fresca,79,1456,6,simulado,borrador_editorial
+latam-077,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que se prepara para un almuerzo familiar,10,10,pan,50,1456,4,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,1,ordenar juguetes,757,2449,29,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,2,lavar platos,462,2449,18,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,3,barrer,202,2449,9,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,4,hacer cama,178,2449,8,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,5,poner mesa,174,2449,7,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,6,alimentar mascotas,172,2449,7,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,7,sacar basura,144,2449,6,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,8,guardar ropa,144,2449,6,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,9,regar plantas,123,2449,6,simulado,borrador_editorial
+latam-078,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona una tarea que hacen los niños en casa,10,10,limpiar habitación,93,2449,4,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,1,comida,192,1331,14,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,2,música,186,1331,14,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,3,conversaciones,176,1331,13,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,4,fotografías,167,1331,12,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,5,niños,152,1331,11,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,6,bebidas,139,1331,10,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,7,postre,115,1331,9,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,8,baile,82,1331,7,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,9,juegos,70,1331,6,simulado,borrador_editorial
+latam-079,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que no falta en una reunión familiar,10,10,abuelos,52,1331,4,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,1,ensalada,340,1420,23,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,2,postre,187,1420,13,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,3,refresco,154,1420,11,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,4,pan,146,1420,10,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,5,arroz,127,1420,9,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,6,botanas,126,1420,9,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,7,fruta,125,1420,9,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,8,salsa,119,1420,8,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,9,hielo,65,1420,5,simulado,borrador_editorial
+latam-080,Cultura latinoamericana,cultura-latinoamericana,Vida cotidiana,Menciona algo que llevarías a una comida compartida,10,10,platos,31,1420,3,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,1,café,608,2957,20,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,2,maíz,571,2957,18,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,3,caña de azúcar,428,2957,14,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,4,plátano,370,2957,12,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,5,cacao,341,2957,11,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,6,arroz,195,2957,7,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,7,soya,139,2957,5,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,8,aguacate,114,2957,5,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,9,papa,103,2957,4,simulado,borrador_editorial
+latam-081,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto cultivado en Latinoamérica,10,10,frijol,88,2957,4,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,1,café,281,1579,17,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,2,cobre,281,1579,17,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,3,petróleo,233,1579,14,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,4,banano,150,1579,9,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,5,soya,143,1579,9,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,6,aguacate,139,1579,9,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,7,cacao,108,1579,7,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,8,flores,99,1579,7,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,9,carne,82,1579,6,simulado,borrador_editorial
+latam-082,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto que Latinoamérica exporta,10,10,azúcar,63,1579,5,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,1,cafetos,413,1513,26,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,2,granos,263,1513,17,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,3,canastos,202,1513,13,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,4,trabajadores,154,1513,10,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,5,árboles de sombra,150,1513,10,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,6,flores blancas,72,1513,5,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,7,frutos rojos,71,1513,5,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,8,herramientas,69,1513,5,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,9,secaderos,62,1513,5,simulado,borrador_editorial
+latam-083,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que encuentras en una plantación de café,10,10,costales,57,1513,4,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,1,chocolate,802,3397,22,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,2,bebida de cacao,501,3397,14,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,3,trufas,489,3397,14,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,4,pastel,443,3397,13,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,5,brownie,298,3397,9,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,6,helado,275,3397,8,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,7,galletas,178,3397,6,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,8,cocoa,151,3397,5,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,9,bombones,140,3397,5,simulado,borrador_editorial
+latam-084,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un producto elaborado con cacao,10,10,crema de cacao,120,3397,4,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,1,papa,972,5157,18,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,2,yuca,854,5157,16,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,3,camote,676,5157,13,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,4,ñame,543,5157,10,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,5,oca,438,5157,9,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,6,olluco,394,5157,8,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,7,malanga,371,5157,7,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,8,arracacha,326,5157,7,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,9,mashua,326,5157,7,simulado,borrador_editorial
+latam-085,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una raíz o tubérculo comestible latinoamericano,10,10,jícama,257,5157,5,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,1,puré,194,1079,17,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,2,papas fritas,160,1079,14,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,3,sopa,124,1079,11,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,4,ensalada,109,1079,10,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,5,papas al horno,108,1079,10,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,6,tortilla de papa,103,1079,10,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,7,causa,89,1079,8,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,8,papas rellenas,83,1079,8,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,9,guiso,66,1079,7,simulado,borrador_editorial
+latam-086,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que se puede preparar con papa,10,10,croquetas,43,1079,5,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,1,orquídea,975,5091,18,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,2,bugambilia,788,5091,15,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,3,girasol,602,5091,12,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,4,cempasúchil,600,5091,12,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,5,heliconia,473,5091,9,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,6,rosa,376,5091,8,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,7,hibisco,355,5091,7,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,8,flor de mayo,336,5091,7,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,9,pasiflora,315,5091,6,simulado,borrador_editorial
+latam-087,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una flor asociada a Latinoamérica,10,10,margarita,271,5091,6,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,1,pesca,679,2144,29,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,2,turismo,399,2144,18,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,3,comercio,190,2144,9,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,4,transporte marítimo,186,2144,9,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,5,venta de mariscos,141,2144,7,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,6,hotelería,139,2144,7,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,7,artesanías,133,2144,7,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,8,buceo,127,2144,6,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,9,acuicultura,104,2144,5,simulado,borrador_editorial
+latam-088,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona una actividad económica de zonas costeras,10,10,construcción naval,46,2144,3,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,1,imán,426,1832,22,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,2,artesanía,355,1832,18,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,3,camiseta,193,1832,11,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,4,chocolate,191,1832,10,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,5,café,167,1832,9,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,6,sombrero,160,1832,9,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,7,postal,96,1832,6,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,8,llavero,91,1832,5,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,9,cerámica,81,1832,5,simulado,borrador_editorial
+latam-089,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona algo que comprarías de recuerdo en Latinoamérica,10,10,tejido,72,1832,5,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,1,flan,1208,5114,22,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,2,arroz con leche,560,5114,11,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,3,tres leches,523,5114,10,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,4,alfajor,514,5114,10,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,5,dulce de leche,511,5114,10,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,6,churros,489,5114,10,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,7,mazamorra,420,5114,8,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,8,brigadeiro,405,5114,8,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,9,quesillo,263,5114,6,simulado,borrador_editorial
+latam-090,Cultura latinoamericana,cultura-latinoamericana,Economía y naturaleza,Menciona un postre popular latinoamericano,10,10,buñuelos,221,5114,5,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,1,concha,903,4405,20,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,2,factura,704,4405,15,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,3,pan de bono,506,4405,11,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,4,pan de yuca,450,4405,10,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,5,rosca,440,4405,10,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,6,pan de muerto,389,4405,9,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,7,medialuna,307,4405,7,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,8,cuernito,288,4405,7,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,9,pan dulce,287,4405,7,simulado,borrador_editorial
+latam-091,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un pan o masa dulce tradicional latinoamericana,10,10,almojábana,131,4405,4,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,1,tamales,1309,4657,26,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,2,lechón,1111,4657,23,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,3,asado,458,4657,10,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,4,hallacas,315,4657,7,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,5,pozole,302,4657,7,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,6,arroz con pollo,276,4657,6,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,7,empanadas,258,4657,6,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,8,sancocho,224,4657,5,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,9,pavo,223,4657,5,simulado,borrador_editorial
+latam-092,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un plato servido en celebraciones latinoamericanas,10,10,pernil,181,4657,5,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,1,pollo,286,1190,23,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,2,frijoles,202,1190,16,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,3,carne,170,1190,14,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,4,pescado,104,1190,9,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,5,huevo,88,1190,8,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,6,lentejas,87,1190,7,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,7,verduras,84,1190,7,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,8,plátano frito,76,1190,7,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,9,mariscos,57,1190,5,simulado,borrador_editorial
+latam-093,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se come acompañado de arroz,10,10,salsa,36,1190,4,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,1,arepa,628,2365,25,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,2,taco,602,2365,24,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,3,empanada,208,2365,9,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,4,choripán,204,2365,9,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,5,pupusa,151,2365,7,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,6,anticucho,146,2365,6,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,7,salchipapa,142,2365,6,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,8,elote,120,2365,6,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,9,churro,83,2365,4,simulado,borrador_editorial
+latam-094,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida callejera latinoamericana,10,10,patacón,81,2365,4,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,1,Argentina,731,4722,15,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,2,Chile,638,4722,13,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,3,Colombia,634,4722,13,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,4,Bolivia,562,4722,12,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,5,Venezuela,513,4722,11,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,6,Ecuador,421,4722,9,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,7,Perú,413,4722,9,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,8,Uruguay,332,4722,7,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,9,Paraguay,315,4722,7,simulado,borrador_editorial
+latam-095,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un país asociado con las empanadas,10,10,México,163,4722,4,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,1,carne,1738,5046,32,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,2,pollo,712,5046,14,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,3,queso,553,5046,11,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,4,jamón,441,5046,9,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,5,espinaca,358,5046,7,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,6,atún,349,5046,7,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,7,choclo,277,5046,6,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,8,cebolla,259,5046,6,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,9,papa,189,5046,4,simulado,borrador_editorial
+latam-096,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona un relleno común de empanada,10,10,verduras,170,5046,4,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,1,huevos,483,2163,21,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,2,pan,402,2163,18,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,3,café,364,2163,16,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,4,fruta,242,2163,11,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,5,arepa,153,2163,7,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,6,frijoles,140,2163,7,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,7,queso,130,2163,6,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,8,avena,94,2163,5,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,9,tamales,94,2163,5,simulado,borrador_editorial
+latam-097,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona algo que se sirve en un desayuno latinoamericano,10,10,jugo,61,2163,4,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,1,sancocho,258,879,27,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,2,ajiaco,117,879,13,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,3,pozole,114,879,13,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,4,locro,114,879,13,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,5,caldo de pollo,71,879,8,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,6,mondongo,55,879,6,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,7,menudo,51,879,6,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,8,chupe,47,879,6,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,9,caldo de res,26,879,4,simulado,borrador_editorial
+latam-098,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una sopa o caldo popular de Latinoamérica,10,10,sopa de lentejas,26,879,4,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,1,guacamole,416,1910,21,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,2,chimichurri,297,1910,15,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,3,ají,274,1910,14,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,4,salsa verde,236,1910,12,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,5,pebre,166,1910,9,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,6,hogao,155,1910,8,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,7,mojo,124,1910,7,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,8,guasacaca,114,1910,6,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,9,sofrito,67,1910,4,simulado,borrador_editorial
+latam-099,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una salsa o acompañamiento latinoamericano,10,10,pico de gallo,61,1910,4,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,1,carne de res,1131,4993,21,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,2,chorizo,772,4993,15,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,3,pollo,672,4993,13,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,4,costillas,556,4993,11,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,5,verduras,536,4993,11,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,6,pescado,386,4993,8,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,7,mazorca,308,4993,7,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,8,cerdo,304,4993,6,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,9,queso,214,4993,5,simulado,borrador_editorial
+latam-100,Cultura latinoamericana,cultura-latinoamericana,Comidas y costumbres,Menciona una comida que se prepara a la parrilla,10,10,brochetas,114,4993,3,simulado,borrador_editorial
