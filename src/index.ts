@@ -1303,7 +1303,7 @@ async function applyAction(
     state.answerIds = selected.answers.map((a) => a.id)
     state.answers = selected.answers.map((a) => ({
       text: a.text,
-      points: a.votes,
+      points: a.points,
       position: a.position,
     }))
     state.revealed = []
