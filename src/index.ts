@@ -1009,6 +1009,10 @@ async function applyAction(
     state.roundWinner = null
     state.roundPoints = 0
     state.control = null
+    state.turnIndex = {
+      blue: state.roundIndex % Math.max(state.teams[0].players.length, 1),
+      red: state.roundIndex % Math.max(state.teams[1].players.length, 1),
+    }
     state.faceoff = undefined
     state.stealTeam = null
     state.phase = "faceoff"
