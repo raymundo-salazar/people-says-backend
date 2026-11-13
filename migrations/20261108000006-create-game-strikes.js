@@ -30,6 +30,7 @@ module.exports = {
         onDelete: "SET NULL",
       },
       round_index: { type: Sequelize.INTEGER, allowNull: false },
+      phase: { type: Sequelize.STRING(16), allowNull: false, defaultValue: "turn" },
       source: { type: Sequelize.STRING(16), allowNull: false, defaultValue: "manual" },
       created_at: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.NOW },
       updated_at: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.NOW },
