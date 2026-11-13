@@ -93,8 +93,35 @@ module.exports = {
     const [questions] = await queryInterface.sequelize.query(
       "SELECT id FROM questions WHERE category_id = (SELECT id FROM categories WHERE name = 'Cultura latinoamericana' LIMIT 1)"
     )
+    const ids = questions.map((question) => question.id)
+    if (!ids.length) return
+    await queryInterface.sequelize.query(
+      "DELETE FROM game_question_answers WHERE game_round_question_id IN (SELECT id FROM game_round_questions WHERE question_id IN (:ids))",
+      { replacements: { ids } }
+    )
+    try {
+      await queryInterface.sequelize.query("DELETE FROM game_rounds WHERE question_id IN (:ids)", {
+        replacements: { ids },
+      })
+    } catch (error) {
+      if (!String(error).includes("no such table")) throw error
+    }
+    await queryInterface.sequelize.query(
+      "DELETE FROM game_round_questions WHERE question_id IN (:ids)",
+      { replacements: { ids } }
+    )
+    await queryInterface.sequelize.query("DELETE FROM game_questions WHERE question_id IN (:ids)", {
+      replacements: { ids },
+    })
+    await queryInterface.sequelize.query(
+      "DELETE FROM question_responses WHERE question_id IN (:ids)",
+      { replacements: { ids } }
+    )
+    await queryInterface.sequelize.query("DELETE FROM game_strikes WHERE question_id IN (:ids)", {
+      replacements: { ids },
+    })
     for (const question of questions)
       await queryInterface.bulkDelete("answers", { question_id: question.id })
-    await queryInterface.bulkDelete("questions", { id: questions.map((question) => question.id) })
+    await queryInterface.bulkDelete("questions", { id: ids })
   },
 }

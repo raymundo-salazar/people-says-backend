@@ -7,11 +7,12 @@ export class GameStrike
 {
   declare id: number
   declare gameId: number
+  declare gameRoundId: number | null
   declare questionId: number
   declare teamId: number | null
   declare playerId: number | null
   declare roundIndex: number
-  declare phase: "faceoff" | "turn"
+  declare phase: "faceoff" | "turn" | "steal"
   declare source: "manual" | "timer"
   declare createdAt: Date
   declare updatedAt: Date
@@ -22,6 +23,7 @@ export function initializeGameStrike(sequelize: Sequelize) {
     {
       id: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true },
       gameId: { type: DataTypes.INTEGER, allowNull: false, field: "game_id" },
+      gameRoundId: { type: DataTypes.INTEGER, allowNull: true, field: "game_round_id" },
       questionId: { type: DataTypes.INTEGER, allowNull: false, field: "question_id" },
       teamId: { type: DataTypes.INTEGER, allowNull: true, field: "team_id" },
       playerId: { type: DataTypes.INTEGER, allowNull: true, field: "player_id" },

@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 module.exports = {
   async up(q, S) {
     await q.createTable("answers", {
@@ -10,13 +10,13 @@ module.exports = {
         onDelete: "CASCADE",
       },
       text: { type: S.STRING(160), allowNull: false },
-      points: { type: S.INTEGER, allowNull: false },
+      votes: { type: S.INTEGER, allowNull: false, defaultValue: 0 },
       position: { type: S.INTEGER, allowNull: false },
       created_at: { type: S.DATE, allowNull: false, defaultValue: S.NOW },
       updated_at: { type: S.DATE, allowNull: false, defaultValue: S.NOW },
-    });
+    })
   },
   async down(q) {
-    await q.dropTable("answers");
+    await q.dropTable("answers")
   },
-};
+}

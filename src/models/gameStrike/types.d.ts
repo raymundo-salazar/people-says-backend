@@ -1,6 +1,7 @@
 export interface GameStrikeAttributes {
   id: number
   gameId: number
+  gameRoundId: number | null
   questionId: number
   teamId: number | null
   playerId: number | null

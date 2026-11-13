@@ -222,6 +222,13 @@ const auth = (req: Request, game: Game) =>
   req.header("x-host-token") === game.hostToken ||
   req.body?.hostToken === game.hostToken ||
   req.query.hostToken === game.hostToken
+const currentRoundId = async (gameId: number, roundIndex: number) => {
+  const [round] = await database.query<{ id: number }>(
+    "SELECT id FROM game_rounds WHERE game_id=:gameId AND round_index=:roundIndex LIMIT 1",
+    { replacements: { gameId, roundIndex }, type: QueryTypes.SELECT }
+  )
+  return round?.id ?? null
+}
 const snapshot = (room: Room, privateView = false) => ({
   code: room.game.code,
   name: room.game.name,
@@ -362,6 +369,13 @@ async function persist(room: Room, state: Record<string, unknown>) {
     ? (activePlayerIds?.[activeTeam]?.[turnIndex?.[activeTeam] ?? 0] ?? null)
     : null
   const typed = room.state
+  const [currentRound] = await database.query<any>(
+    "SELECT id FROM game_rounds WHERE game_id=:gameId AND round_index=:roundIndex LIMIT 1",
+    {
+      replacements: { gameId: room.game.id, roundIndex: typed.roundIndex },
+      type: QueryTypes.SELECT,
+    }
+  )
   for (const key of ["blue", "red"] as TeamId[]) {
     const config = typed.teams.find((team) => team.id === key)!
     const [team] = await Team.findOrCreate({
@@ -386,10 +400,11 @@ async function persist(room: Room, state: Record<string, unknown>) {
       })
   }
   await database.query(
-    "UPDATE game_runtime SET question_id=:questionId, round_index=:roundIndex, pot=:pot, control=:control, steal_team=:stealTeam, round_winner=:roundWinner, round_points=:roundPoints, faceoff_strike_team=:faceoffStrikeTeam, faceoff_first_team=:firstTeam, faceoff_first_index=:firstIndex, faceoff_second_team=:secondTeam, faceoff_second_index=:secondIndex, updated_at=CURRENT_TIMESTAMP WHERE game_id=:gameId",
+    "UPDATE game_runtime SET game_round_id=:gameRoundId, question_id=:questionId, round_index=:roundIndex, pot=:pot, control=:control, steal_team=:stealTeam, round_winner=:roundWinner, round_points=:roundPoints, faceoff_strike_team=:faceoffStrikeTeam, faceoff_first_team=:firstTeam, faceoff_first_index=:firstIndex, faceoff_second_team=:secondTeam, faceoff_second_index=:secondIndex, updated_at=CURRENT_TIMESTAMP WHERE game_id=:gameId",
     {
       replacements: {
         gameId: room.game.id,
+        gameRoundId: currentRound?.id ?? null,
         questionId: typed.questionId ?? null,
         roundIndex: typed.roundIndex,
         pot: typed.pot,
@@ -405,6 +420,20 @@ async function persist(room: Room, state: Record<string, unknown>) {
       },
     }
   )
+  if (currentRound?.id) {
+    await database.query(
+      "UPDATE game_rounds SET points=:points, winner_team=:winnerTeam, status=:status, started_at=COALESCE(started_at,CURRENT_TIMESTAMP), finished_at=:finishedAt, updated_at=CURRENT_TIMESTAMP WHERE id=:roundId",
+      {
+        replacements: {
+          roundId: currentRound.id,
+          points: typed.roundPoints ?? 0,
+          winnerTeam: typed.roundWinner ?? null,
+          status: ["round_result", "final"].includes(room.game.phase) ? "finished" : "active",
+          finishedAt: ["round_result", "final"].includes(room.game.phase) ? new Date() : null,
+        },
+      }
+    )
+  }
   await database.query("DELETE FROM game_round_configs WHERE game_id=:gameId", {
     replacements: { gameId: room.game.id },
   })
@@ -594,9 +623,31 @@ app.post("/api/rooms", async (req, res) => {
           }
         )
     }
+    for (const [roundIndex, prepared] of preparedQuestions.entries())
+      await database.query(
+        "INSERT INTO game_rounds (game_id, round_index, question_id, multiplier, status, created_at, updated_at) VALUES (:gameId,:roundIndex,:questionId,:multiplier,'pending',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)",
+        {
+          replacements: {
+            gameId: game.id,
+            roundIndex,
+            questionId: prepared.question.id,
+            multiplier: configs[roundIndex].multiplier,
+          },
+        }
+      )
+    const [currentRound] = await database.query<any>(
+      "SELECT id FROM game_rounds WHERE game_id=:gameId AND round_index=0 LIMIT 1",
+      { replacements: { gameId: game.id }, type: QueryTypes.SELECT }
+    )
     await database.query(
-      "INSERT INTO game_runtime (game_id, question_id, round_index, pot, created_at, updated_at) VALUES (:gameId,:questionId,0,0,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)",
-      { replacements: { gameId: game.id, questionId: selected.question.id } }
+      "INSERT INTO game_runtime (game_id, game_round_id, question_id, round_index, pot, created_at, updated_at) VALUES (:gameId,:gameRoundId,:questionId,0,0,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)",
+      {
+        replacements: {
+          gameId: game.id,
+          gameRoundId: currentRound.id,
+          questionId: selected.question.id,
+        },
+      }
     )
     for (const [teamIndex, key] of ["blue", "red"].entries())
       await database.query(
@@ -1042,6 +1093,8 @@ async function applyAction(
         questionId: state.questionId,
         answerId: state.answerIds[input.index!],
         gameId: room.game.id,
+        gameRoundId: await currentRoundId(room.game.id, state.roundIndex),
+        roundIndex: state.roundIndex,
         teamId: state.teamIds?.[team] ?? null,
         playerId: state.playerIds?.[team]?.[state.turnIndex[team]] ?? null,
         submittedText: answer.text,
@@ -1055,6 +1108,8 @@ async function applyAction(
       questionId: state.questionId,
       answerId: state.answerIds[input.index!],
       gameId: room.game.id,
+      gameRoundId: await currentRoundId(room.game.id, state.roundIndex),
+      roundIndex: state.roundIndex,
       teamId: state.teamIds?.[team] ?? null,
       playerId: state.playerIds?.[team]?.[state.turnIndex[team]] ?? null,
       submittedText: answer.text,
@@ -1116,6 +1171,7 @@ async function applyAction(
       if (state.stealTeam !== input.team) throw new Error("not_steal_team")
       await GameStrike.create({
         gameId: room.game.id,
+        gameRoundId: await currentRoundId(room.game.id, state.roundIndex),
         questionId: state.questionId,
         teamId: state.teamIds?.[input.team] ?? null,
         playerId: state.playerIds?.[input.team]?.[state.turnIndex[input.team]] ?? null,
@@ -1127,6 +1183,7 @@ async function applyAction(
     }
     await GameStrike.create({
       gameId: room.game.id,
+      gameRoundId: await currentRoundId(room.game.id, state.roundIndex),
       questionId: state.questionId,
       teamId: state.teamIds?.[input.team] ?? null,
       playerId: state.playerIds?.[input.team]?.[state.turnIndex[input.team]] ?? null,
@@ -1189,6 +1246,8 @@ async function applyAction(
       questionId: state.questionId,
       answerId: state.answerIds[answerIndex],
       gameId: room.game.id,
+      gameRoundId: await currentRoundId(room.game.id, state.roundIndex),
+      roundIndex: state.roundIndex,
       teamId: state.teamIds?.[state.stealTeam] ?? null,
       playerId: state.playerIds?.[state.stealTeam]?.[state.turnIndex[state.stealTeam]] ?? null,
       submittedText: submittedText || answer.text,

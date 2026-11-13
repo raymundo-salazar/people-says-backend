@@ -10,6 +10,7 @@ module.exports = {
         references: { model: "games", key: "id" },
         onDelete: "CASCADE",
       },
+      game_round_id: { type: Sequelize.INTEGER, allowNull: true },
       question_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
