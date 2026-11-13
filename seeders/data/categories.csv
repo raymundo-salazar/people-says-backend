@@ -1,0 +1,17 @@
+code,name,description,types
+cultura-mexicana,Cultura mexicana,"Tradiciones, gastronomía, costumbres y celebraciones de México.",general
+cultura-latinoamericana,Cultura latinoamericana,"Tradiciones, comidas y experiencias compartidas en Latinoamérica.",general
+cultura-general,Cultura general,"Historia, geografía, ciencia y conocimientos cotidianos.",general
+disney-pixar,Disney y Pixar,"Películas animadas, personajes e historias.",general
+peliculas-series,Películas y series,"Cine, televisión, personajes y producciones populares.",general
+peliculas-infantiles,Películas y caricaturas infantiles,"Personajes, películas animadas, series infantiles, aventuras y recuerdos de la televisión y el cine para niños.",general|children
+animales-naturaleza,Animales y naturaleza,"Animales, hábitats y curiosidades naturales.",general|children
+vida-cotidiana,Vida cotidiana,"Familia, hogar, escuela, trabajo y situaciones comunes.",general|family
+deportes,Deportes,"Disciplinas, equipos, atletas y competencias.",general
+musica,Música,"Géneros, artistas, canciones y conciertos.",general
+videojuegos,Videojuegos,"Juegos, consolas, personajes y experiencias de juego.",general|children
+tecnologia,Tecnología,"Innovaciones, gadgets, software y avances tecnológicos.",general
+ciencia-espacio,Ciencia y espacio,"Descubrimientos científicos, astronomía y exploración espacial.",general|children
+arte-literatura,Arte y literatura,"Pintura, escultura, literatura y expresiones artísticas.",general
+religion-filosofia,Religión y filosofía,"Creencias, tradiciones religiosas, personajes históricos, símbolos, textos y grandes preguntas filosóficas.",general
+baby-shower,Baby Shower,"Celebraciones y preparativos para la llegada de un bebé.",occasion|family

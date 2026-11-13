@@ -3,6 +3,7 @@ module.exports = {
   async up(q, S) {
     await q.createTable("categories", {
       id: { type: S.INTEGER, autoIncrement: true, primaryKey: true },
+      code: { type: S.STRING(80), allowNull: false, unique: true },
       name: { type: S.STRING(100), allowNull: false, unique: true },
       description: { type: S.STRING(280), allowNull: false },
       created_at: { type: S.DATE, allowNull: false, defaultValue: S.NOW },

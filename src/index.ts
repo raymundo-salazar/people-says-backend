@@ -722,11 +722,22 @@ app.get("/api/questions/random", async (req, res) => {
   }
 })
 app.get("/api/categories", async (_req, res) => {
-  const categories = await database.query(
-    'SELECT categories.id, categories.name, categories.description, COUNT(questions.id) AS "questionCount" FROM categories LEFT JOIN questions ON questions.category_id = categories.id GROUP BY categories.id, categories.name, categories.description ORDER BY categories.id',
+  const categories = await database.query<any>(
+    'SELECT categories.id, categories.code, categories.name, categories.description, COUNT(questions.id) AS "questionCount" FROM categories LEFT JOIN questions ON questions.category_id = categories.id GROUP BY categories.id, categories.code, categories.name, categories.description ORDER BY categories.id',
     { type: QueryTypes.SELECT }
   )
-  return res.json(categories)
+  const types = await database.query<any>(
+    "SELECT category_type_categories.category_id, category_types.slug, category_types.name, category_types.description FROM category_type_categories JOIN category_types ON category_types.id = category_type_categories.category_type_id ORDER BY category_types.id",
+    { type: QueryTypes.SELECT }
+  )
+  return res.json(
+    categories.map((category) => ({
+      ...category,
+      types: types
+        .filter((type) => type.category_id === category.id)
+        .map(({ category_id, ...type }) => type),
+    }))
+  )
 })
 app.get("/api/questions/selection", async (req, res) => {
   try {
