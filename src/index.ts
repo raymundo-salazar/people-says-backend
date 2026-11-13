@@ -1287,7 +1287,17 @@ async function applyAction(
       state.phase = "final"
       return persist(room, state)
     }
-    const selected = await questionFor(config.answerCount, room.game.id)
+    const [assignedQuestion] = await database.query<{ question_id: number; category_id: number }>(
+      "SELECT game_round_questions.question_id, questions.category_id FROM game_round_questions JOIN questions ON questions.id = game_round_questions.question_id WHERE game_round_questions.game_id=:gameId AND game_round_questions.round_index=:roundIndex LIMIT 1",
+      {
+        replacements: { gameId: room.game.id, roundIndex: state.roundIndex },
+        type: QueryTypes.SELECT,
+      }
+    )
+    if (!assignedQuestion) throw new Error("question_not_found")
+    const selected = await prepareQuestion(assignedQuestion.question_id, config.answerCount, [
+      assignedQuestion.category_id,
+    ])
     state.questionId = selected.question.id
     state.questionPrompt = selected.question.prompt
     state.answerIds = selected.answers.map((a) => a.id)
