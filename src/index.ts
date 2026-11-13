@@ -990,6 +990,11 @@ async function applyAction(
     const validCombination =
       (roles.length === 1 && roleSet.has("host")) ||
       (roles.length === 2 && roleSet.size === 2 && roleSet.has("host") && roleSet.has("display")) ||
+      (roles.length === 3 &&
+        roleSet.size === 3 &&
+        roleSet.has("host") &&
+        roleSet.has("blue_button") &&
+        roleSet.has("red_button")) ||
       (roles.length === 4 &&
         roleSet.size === 4 &&
         (["host", "display", "blue_button", "red_button"] as Role[]).every((role) =>
@@ -997,9 +1002,7 @@ async function applyAction(
         ))
     if (!validCombination) {
       throw new Error(
-        roles.length === 3
-          ? "Para iniciar usa solo Presentador; Presentador y Pantalla pública; o completa los roles de Presentador, Pantalla pública, Pulsador azul y Pulsador rojo."
-          : "La sala debe tener Presentador. Puedes jugar solo con él, agregar Pantalla pública o completar los roles de ambos pulsadores."
+        "Configuraciones válidas: Presentador; Presentador y Pantalla pública; Presentador con Pulsador azul y Pulsador rojo; o los cuatro roles completos."
       )
     }
     room.buzzerWinner = null
