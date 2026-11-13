@@ -1207,6 +1207,17 @@ async function applyAction(
       source: input.source === "timer" ? "timer" : "manual",
     })
     if (state.phase !== "turn") {
+      const firstFaceoffTeam = state.faceoff?.firstTeam
+      const firstFaceoffIndex = state.faceoff?.firstIndex
+      if (firstFaceoffTeam && firstFaceoffIndex !== undefined && input.team !== firstFaceoffTeam) {
+        state.control = firstFaceoffTeam
+        state.phase = "turn"
+        state.turnIndex = advancePlayer(state, firstFaceoffTeam).turnIndex
+        state.faceoffStrikes = { blue: 0, red: 0 }
+        state.faceoffStrikeTeam = undefined
+        state.faceoff = undefined
+        return persist(room, state)
+      }
       if (state.faceoffStrikeTeam && state.faceoffStrikeTeam !== input.team) {
         state.faceoffStrikeTeam = undefined
         state.faceoff = {
