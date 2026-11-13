@@ -1037,6 +1037,7 @@ async function applyAction(
     if (!team) throw new Error("turn_not_active")
     if (stealMode) {
       const next = { ...state, revealed: [...state.revealed, input.index!] }
+      next.pot = state.pot + answer.points * state.roundConfigs[state.roundIndex].multiplier
       await QuestionResponse.create({
         questionId: state.questionId,
         answerId: state.answerIds[input.index!],
@@ -1045,7 +1046,7 @@ async function applyAction(
         playerId: state.playerIds?.[team]?.[state.turnIndex[team]] ?? null,
         submittedText: answer.text,
         isValid: true,
-        awardedPoints: state.pot,
+        awardedPoints: next.pot,
       })
       return persist(room, finishRound(next, team))
     }
@@ -1181,6 +1182,9 @@ async function applyAction(
       !state.revealed.includes(answerIndex) &&
       (!input.answerText || normalize(answer.text) === normalize(input.answerText))
     const winner = valid ? state.stealTeam : state.control
+    const awardedPoints = valid
+      ? state.pot + answer.points * state.roundConfigs[state.roundIndex].multiplier
+      : 0
     await QuestionResponse.create({
       questionId: state.questionId,
       answerId: state.answerIds[answerIndex],
@@ -1189,9 +1193,9 @@ async function applyAction(
       playerId: state.playerIds?.[state.stealTeam]?.[state.turnIndex[state.stealTeam]] ?? null,
       submittedText: submittedText || answer.text,
       isValid: valid,
-      awardedPoints: valid ? state.pot : 0,
+      awardedPoints,
     })
-    return persist(room, finishRound(state, winner))
+    return persist(room, finishRound(valid ? { ...state, pot: awardedPoints } : state, winner))
   }
   if (input.type === "finish_round" && (input.winner === "blue" || input.winner === "red")) {
     if (!["round_result", "steal"].includes(state.phase)) throw new Error("round_not_finished")
