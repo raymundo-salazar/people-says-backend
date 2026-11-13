@@ -1291,6 +1291,11 @@ async function applyAction(
       state.phase = "final"
       return persist(room, state)
     }
+    room.buzzerWinner = null
+    state.turnIndex = {
+      blue: state.roundIndex % Math.max(state.teams[0].players.length, 1),
+      red: state.roundIndex % Math.max(state.teams[1].players.length, 1),
+    }
     const [assignedQuestion] = await database.query<{ question_id: number; category_id: number }>(
       "SELECT game_round_questions.question_id, questions.category_id FROM game_round_questions JOIN questions ON questions.id = game_round_questions.question_id WHERE game_round_questions.game_id=:gameId AND game_round_questions.round_index=:roundIndex LIMIT 1",
       {
