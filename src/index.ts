@@ -1,5 +1,5 @@
 import "dotenv/config"
-import express, { type Request } from "express"
+import express, { type Request, type RequestHandler } from "express"
 import cors from "cors"
 import * as helmetModule from "helmet"
 import { handle as i18nHandle } from "i18next-http-middleware"
@@ -65,7 +65,7 @@ type StoredState = GameState & {
 }
 const rooms = new Map<string, Room>()
 const app = express()
-const helmet = helmetModule.default
+const helmet = helmetModule.default as unknown as () => RequestHandler
 const origins = [process.env.APP_ORIGIN, ...(process.env.APP_ORIGINS ?? "").split(",")]
   .filter((value): value is string => Boolean(value))
   .map((value) => value.trim())
