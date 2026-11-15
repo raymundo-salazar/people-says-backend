@@ -2,6 +2,9 @@
   "name": "@people-says/backend",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "nodemon",
     "build": "tsc -p tsconfig.json",
