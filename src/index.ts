@@ -1389,6 +1389,7 @@ const redisAdapterReady = redisUrl
       io.adapter(createAdapter(pubClient, subClient))
       console.log("Socket.IO Redis adapter conectado")
     })().catch((error) => {
+      presenceClient = null
       console.error("socket_redis_adapter_failed", error)
     })
   : Promise.resolve()
