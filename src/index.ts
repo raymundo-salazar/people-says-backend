@@ -502,7 +502,7 @@ function emitState(io: Server, room: Room) {
       client.emit("game:state", snapshot(room, true))
 }
 
-app.get("/health", (_req, res) => res.json({ ok: true, service: "people-says" }))
+app.get(["/health", "/api/health"], (_req, res) => res.json({ ok: true, service: "people-says" }))
 app.post("/api/rooms", async (req, res) => {
   try {
     const configs: RoundConfig[] = (
