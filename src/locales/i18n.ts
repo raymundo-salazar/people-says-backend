@@ -1,11 +1,12 @@
 import Backend from 'i18next-fs-backend'
 import { LanguageDetector } from 'i18next-http-middleware'
-import i18next from 'i18next'
+import * as i18nextModule from 'i18next'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const currentDirectory = path.dirname(fileURLToPath(import.meta.url))
 const sourceLocalesDirectory = path.resolve(currentDirectory, '../../src/locales')
+const i18next = i18nextModule.default
 
 await i18next
   .use(Backend)
