@@ -1,4 +1,5 @@
 require('dotenv').config()
+const pg = require('pg')
 
 const configuredDialect = process.env.DATABASE_DIALECT || (process.env.DATABASE_URL ? 'postgres' : 'sqlite')
 const dialect = configuredDialect === 'postgresql' ? 'postgres' : configuredDialect
@@ -13,6 +14,7 @@ const connection = dialect === 'sqlite'
   : {
       use_env_variable: 'DATABASE_URL',
       dialect,
+      dialectModule: pg,
       dialectOptions: {
         ssl: { require: true },
       },

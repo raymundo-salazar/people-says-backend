@@ -1,4 +1,5 @@
 import 'dotenv/config'
+import * as pg from 'pg'
 import { Sequelize } from 'sequelize'
 
 const configuredDialect = process.env.DATABASE_DIALECT || (process.env.DATABASE_URL ? 'postgres' : 'sqlite')
@@ -7,6 +8,7 @@ const sequelize = dialect === 'sqlite'
   ? new Sequelize({ dialect, storage: process.env.DATABASE_STORAGE || './data/people-says.sqlite', logging: false })
   : new Sequelize(process.env.DATABASE_URL || '', {
       dialect,
+      dialectModule: pg,
       dialectOptions: {
         ssl: { require: true },
       },
