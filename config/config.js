@@ -13,6 +13,9 @@ const connection = dialect === 'sqlite'
   : {
       use_env_variable: 'DATABASE_URL',
       dialect,
+      dialectOptions: {
+        ssl: { require: true },
+      },
       logging: false,
       seederStorage: 'sequelize',
       seederStorageTableName: 'SequelizeData',
