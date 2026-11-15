@@ -270,13 +270,17 @@ const snapshot = (room: Room, privateView = false) => ({
 async function loadRoom(code: string) {
   const normalized = code.toUpperCase()
   const cached = rooms.get(normalized)
-  if (cached) return cached
+  if (cached) {
+    await syncDevices(cached)
+    return cached
+  }
   const game = await Game.findOne({ where: { code: normalized } })
   if (!game) return null
   const state = await normalizedState(game)
   if (game.activeTeam) state.control = game.activeTeam
   const room = { game, state, devices: new Map<string, Device>(), buzzerWinner: null }
   rooms.set(normalized, room)
+  await syncDevices(room)
   return room
 }
 async function questionFor(count: number, gameId?: number, categoryIds?: number[]) {
@@ -811,6 +815,7 @@ app.post("/api/rooms/:code/join", async (req, res) => {
     controller: role === "host" && auth(req, room.game),
     connectedAt: Date.now(),
   })
+  await saveDevicePresence(room, room.devices.get(deviceToken)!)
   return res.json({ deviceToken, ...snapshot(room, role === "host") })
 })
 app.patch("/api/rooms/:code/teams", async (req, res) => {
@@ -1374,17 +1379,52 @@ function scheduleAuto(room: Room) {
 const server = createServer(app)
 const io = new Server(server, { cors: { origin: allowedOrigins } })
 const redisUrl = process.env.REDIS_URL ?? process.env.UPSTASH_REDIS_URL
+let presenceClient: Redis | null = null
 const redisAdapterReady = redisUrl
   ? (async () => {
       const pubClient = new Redis(redisUrl, { lazyConnect: true, maxRetriesPerRequest: null })
       const subClient = pubClient.duplicate()
-      await Promise.all([pubClient.connect(), subClient.connect()])
+      presenceClient = pubClient.duplicate()
+      await Promise.all([pubClient.connect(), subClient.connect(), presenceClient.connect()])
       io.adapter(createAdapter(pubClient, subClient))
       console.log("Socket.IO Redis adapter conectado")
     })().catch((error) => {
       console.error("socket_redis_adapter_failed", error)
     })
   : Promise.resolve()
+const deviceKey = (code: string) => `people-says:room:${code.toUpperCase()}:devices`
+async function syncDevices(room: Room) {
+  await redisAdapterReady
+  if (!presenceClient) return
+  const stored = await presenceClient.hgetall(deviceKey(room.game.code))
+  const devices = new Map<string, Device>()
+  for (const [id, value] of Object.entries(stored)) {
+    try {
+      const device = JSON.parse(value) as Device
+      const localDevice = room.devices.get(id)
+      devices.set(id, { ...device, socketId: localDevice?.socketId })
+    } catch (error) {
+      console.error("invalid_device_presence", { id, error })
+    }
+  }
+  room.devices = devices
+}
+async function saveDevicePresence(room: Room, device: Device) {
+  await redisAdapterReady
+  if (!presenceClient) return
+  const stored = { ...device, socketId: undefined }
+  await presenceClient.hset(deviceKey(room.game.code), device.id, JSON.stringify(stored))
+  await presenceClient.expire(deviceKey(room.game.code), 60 * 60)
+}
+async function removeDevicePresence(room: Room, deviceId: string) {
+  await redisAdapterReady
+  if (!presenceClient) return
+  await presenceClient.hdel(deviceKey(room.game.code), deviceId)
+}
+async function broadcastPresence(room: Room) {
+  await syncDevices(room)
+  io.to(room.game.code).emit("room:presence", { devices: [...room.devices.values()] })
+}
 io.on("connection", (socket) => {
   void redisAdapterReady.then(() => {
   socket.on(
@@ -1399,6 +1439,7 @@ io.on("connection", (socket) => {
     }) => {
       const room = await loadRoom(payload.code)
       if (!room) return socket.emit("game:error", { error: "room_not_found" })
+      await syncDevices(room)
       const id = payload.deviceToken ?? socket.id
       const existing = room.devices.get(id)
       const name = payload.name?.trim() || "Dispositivo"
@@ -1419,11 +1460,10 @@ io.on("connection", (socket) => {
         return socket.emit("game:error", { error: "role_taken" })
       if (occupant) {
         occupant.role = "pending"
-        if (occupant.socketId) {
-          io.sockets.sockets.get(occupant.socketId)?.emit("device:role-replaced", {
-            message: "El dispositivo principal reasignó tu rol. Selecciona otro para continuar.",
-          })
-        }
+        await saveDevicePresence(room, occupant)
+        io.to(`device:${occupant.id}`).emit("device:role-replaced", {
+          message: "El dispositivo principal reasignó tu rol. Selecciona otro para continuar.",
+        })
       }
       if (!room.devices.has(id) && room.devices.size >= 4)
         return socket.emit("game:error", { error: "room_full" })
@@ -1436,12 +1476,14 @@ io.on("connection", (socket) => {
         socketId: socket.id,
         controller,
       })
+      await saveDevicePresence(room, room.devices.get(id)!)
       socket.data.room = room.game.code
       socket.data.role = payload.role
       socket.data.deviceId = id
       socket.join(room.game.code)
+      socket.join(`device:${id}`)
       socket.emit("room:snapshot", snapshot(room, payload.role === "host"))
-      io.to(room.game.code).emit("room:presence", { devices: [...room.devices.values()] })
+      await broadcastPresence(room)
     }
   )
   socket.on(
@@ -1516,9 +1558,13 @@ io.on("connection", (socket) => {
     const id = socket.data.deviceId as string | undefined
     if (!room || !id) return
     setTimeout(() => {
-      if (room.devices.get(id)?.socketId !== socket.id) return
-      room.devices.delete(id)
-      io.to(room.game.code).emit("room:presence", { devices: [...room.devices.values()] })
+      void (async () => {
+        await syncDevices(room)
+        if (room.devices.get(id)?.socketId !== socket.id) return
+        room.devices.delete(id)
+        await removeDevicePresence(room, id)
+        await broadcastPresence(room)
+      })()
     }, 350)
   })
   })
