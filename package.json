@@ -24,6 +24,7 @@
     "db:revert": "pnpm db:seed:undo:all && pnpm db:migrate:undo:all"
   },
   "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
@@ -31,6 +32,7 @@
     "i18next": "^26.5.11",
     "i18next-fs-backend": "^2.6.9",
     "i18next-http-middleware": "^3.9.11",
+    "ioredis": "^6.0.0",
     "morgan": "^1.12.1",
     "pg": "^8.13.1",
     "sequelize": "^6.37.5",

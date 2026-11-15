@@ -7,6 +7,8 @@ import morgan from "morgan"
 import { randomBytes } from "node:crypto"
 import { createServer } from "node:http"
 import { Server } from "socket.io"
+import { createAdapter } from "@socket.io/redis-adapter"
+import { Redis } from "ioredis"
 import { Op, QueryTypes } from "sequelize"
 import {
   Answer,
@@ -1371,7 +1373,20 @@ function scheduleAuto(room: Room) {
 
 const server = createServer(app)
 const io = new Server(server, { cors: { origin: allowedOrigins } })
+const redisUrl = process.env.REDIS_URL ?? process.env.UPSTASH_REDIS_URL
+const redisAdapterReady = redisUrl
+  ? (async () => {
+      const pubClient = new Redis(redisUrl, { lazyConnect: true, maxRetriesPerRequest: null })
+      const subClient = pubClient.duplicate()
+      await Promise.all([pubClient.connect(), subClient.connect()])
+      io.adapter(createAdapter(pubClient, subClient))
+      console.log("Socket.IO Redis adapter conectado")
+    })().catch((error) => {
+      console.error("socket_redis_adapter_failed", error)
+    })
+  : Promise.resolve()
 io.on("connection", (socket) => {
+  void redisAdapterReady.then(() => {
   socket.on(
     "room:join",
     async (payload: {
@@ -1505,6 +1520,7 @@ io.on("connection", (socket) => {
       room.devices.delete(id)
       io.to(room.game.code).emit("room:presence", { devices: [...room.devices.values()] })
     }, 350)
+  })
   })
 })
 database.authenticate().catch((error) => {
