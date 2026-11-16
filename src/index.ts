@@ -560,18 +560,19 @@ app.post("/api/rooms", async (req, res) => {
     const preparedQuestions = []
     for (let index = 0; index < configs.length; index++) {
       const requestedId = Number(requestedQuestions[index]?.id)
-      const candidate =
+      const hasRequestedQuestion =
         Number.isInteger(requestedId) && requestedId > 0 && !usedQuestionIds.has(requestedId)
-          ? await prepareQuestion(requestedId, configs[index].answerCount, categoryIds)
-          : null
-      const prepared =
-        candidate ??
-        (await prepareQuestion(
-          (await candidateQuestion(configs[index].answerCount, categoryIds, [...usedQuestionIds]))
-            .id,
-          configs[index].answerCount,
-          categoryIds
-        ))
+      const prepared = hasRequestedQuestion
+        ? await prepareQuestion(requestedId, configs[index].answerCount, categoryIds)
+        : await (async () => {
+            const candidate = await candidateQuestion(
+              configs[index].answerCount,
+              categoryIds,
+              [...usedQuestionIds]
+            )
+            if (!Number.isInteger(candidate.id)) throw new Error("question_not_found")
+            return prepareQuestion(candidate.id, configs[index].answerCount, categoryIds)
+          })()
       usedQuestionIds.add(prepared.question.id)
       preparedQuestions.push(prepared)
     }
