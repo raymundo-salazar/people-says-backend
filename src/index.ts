@@ -335,6 +335,7 @@ function calculatePoints(
   return answers.map((answer, index) => ({ ...answer, points: points[index] }))
 }
 async function prepareQuestion(questionId: number, answerCount: number, categoryIds: number[]) {
+  if (!Number.isInteger(questionId) || questionId <= 0) throw new Error("invalid_question_id")
   const question = await Question.findOne({ where: { id: questionId, categoryId: categoryIds } })
   if (!question || question.answersCount < answerCount)
     throw new Error("question_does_not_have_enough_answers")
@@ -574,6 +575,7 @@ app.post("/api/rooms", async (req, res) => {
               [...usedQuestionIds]
             )
             if (!Number.isInteger(candidate.id)) throw new Error("question_not_found")
+            creationStage = `prepare_question_${index}_candidate_${candidate.id}`
             return prepareQuestion(candidate.id, configs[index].answerCount, categoryIds)
           })()
       usedQuestionIds.add(prepared.question.id)
