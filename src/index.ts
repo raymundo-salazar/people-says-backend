@@ -510,7 +510,9 @@ function emitState(io: Server, room: Room) {
 
 app.get(["/health", "/api/health"], (_req, res) => res.json({ ok: true, service: "people-says" }))
 app.post("/api/rooms", async (req, res) => {
+  let creationStage = "start"
   try {
+    creationStage = "build_config"
     const configs: RoundConfig[] = (
       Array.isArray(req.body?.rounds) ? req.body.rounds : [10, 8, 6, 5, 4]
     ).map((item: unknown) =>
@@ -559,6 +561,7 @@ app.post("/api/rooms", async (req, res) => {
     const usedQuestionIds = new Set<number>()
     const preparedQuestions = []
     for (let index = 0; index < configs.length; index++) {
+      creationStage = `prepare_question_${index}`
       const requestedId = Number(requestedQuestions[index]?.id)
       const hasRequestedQuestion =
         Number.isInteger(requestedId) && requestedId > 0 && !usedQuestionIds.has(requestedId)
@@ -591,6 +594,7 @@ app.post("/api/rooms", async (req, res) => {
       points: a.points,
       position: a.position,
     }))
+    creationStage = "create_game"
     const game = await Game.create({
       code,
       name: req.body?.name ?? "La gente dice",
@@ -598,6 +602,7 @@ app.post("/api/rooms", async (req, res) => {
       phase: state.phase,
       hostToken,
     })
+    creationStage = "persist_game_categories"
     await database.query(
       "INSERT INTO game_categories (game_id, category_id, created_at, updated_at) SELECT :gameId, id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP FROM categories WHERE id IN (:categoryIds)",
       { replacements: { gameId: game.id, categoryIds } }
@@ -710,6 +715,11 @@ app.post("/api/rooms", async (req, res) => {
     })
   } catch (error) {
     console.error("room_creation_failed", error)
+    if (req.header("x-debug-create") === "1")
+      return res.status(400).json({
+        error: error instanceof Error ? error.message : "room_creation_failed",
+        stage: creationStage,
+      })
     return res
       .status(400)
       .json({ error: error instanceof Error ? error.message : "room_creation_failed" })
