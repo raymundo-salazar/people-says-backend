@@ -3,6 +3,22 @@
   "buildCommand": "pnpm db:migrate && pnpm db:seed && pnpm build",
   "routes": [
     {
+      "src": "/socket.io/(.*)",
+      "dest": "/api/socket-io.ts"
+    },
+    {
+      "src": "/socket.io",
+      "dest": "/api/socket-io.ts"
+    },
+    {
+      "src": "/api/socket.io/(.*)",
+      "dest": "/api/socket-io.ts"
+    },
+    {
+      "src": "/api/socket.io",
+      "dest": "/api/socket-io.ts"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/index.ts"
     },
